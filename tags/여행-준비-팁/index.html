@@ -1,0 +1,569 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>여행 준비 팁 | ju-hey.log</title>
+<meta name="description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+<meta name="robots" content="noindex, follow">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="여행 준비 팁">
+<meta property="og:url" content="https://juheyday.github.io/tags/%EC%97%AC%ED%96%89-%EC%A4%80%EB%B9%84-%ED%8C%81/">
+
+
+  <meta property="og:description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/tags/%EC%97%AC%ED%96%89-%EC%A4%80%EB%B9%84-%ED%8C%81/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--tag" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  scheduleIdleHide();
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" class="archive-main-grid" role="main">
+  
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">여행 준비 팁</h1>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="category-post-list" data-archive-post-list data-page-size="10">
+
+
+
+
+
+
+      
+      
+      
+        
+          
+          
+      
+
+
+
+
+
+
+<article class="category-post-item" data-category-post-item itemscope itemtype="https://schema.org/CreativeWork">
+  
+    <a class="category-post-item__image" href="/travel/post-006/" tabindex="-1" aria-hidden="true">
+      <img src="https://ju-hey-console.vercel.app/api/images/post-006/5ddc3cdd-b720-4d9a-abf0-a370e7a7517f.jpg" alt="" loading="lazy">
+      
+
+  
+  
+  
+  
+  <span class="post-card-readtime"><i class="far fa-clock" aria-hidden="true"></i>7 min</span>
+
+
+    </a>
+  
+  <div class="category-post-item__body">
+    <h2 class="category-post-item__title" itemprop="headline">
+      <a href="/travel/post-006/" rel="permalink">[남유럽 2개국] 2026년 2월 비수기 자유여행 계획 (3) - 튀르키예 여행의 매력포인트/숙소/교통편/물가/그 밖의 발견
+</a>
+    </h2>
+    <p class="category-post-item__meta">
+      <time datetime="2026-07-11T00:00:00+09:00">2026.07.11</time>
+      <span aria-hidden="true">/</span>
+      <span>Travel</span>
+    </p>
+    <p class="category-post-item__summary p-summary" itemprop="description">
+      <span class="category-post-item__excerpt">은근한 기대와 놀라운 풍경과 마성의 매력.</span><span class="category-post-item__separator" aria-hidden="true"></span><span class="category-post-item__body-preview">주헤이네의 이번 목표는 만남과 휴식이었다. &nbsp; ‘만남’은, 주헤이의 영어선생님이자 튀르키예인 친구 K와의 만남이 예정되어 있었다. &nbsp; ‘휴식’은 주헤이의 짝꿍, DJ의 휴식을 독려하고자 한 것인데, DJ보다 오히려 주헤이와 엄마가 더 신난 듯했지만 그냥 넘어가기로 했다. &nbsp; 앞서 정했던 주헤이네 여행지 및 일정. &nbsp; 여행지마다, ‘여기 가면 다들 이건 꼭 보고 온다’ 고 말하는 것들이 있다. &nbsp; 랜드마크라든가 명물이라든가 하는 이름으로 불리는 것들. &nbsp; 우리의 시간은 한정되어 있고 여행에는 늘 변수가 많은데, 비가 올 때는 어떨까. &nbsp; 관광객이 적은 시즌엔 뭐가 다를까? &nbsp; 어느 때보다도 선택과 집중을 요하는 비수기 여행 준비에 도움이 되기를 바라면서 주헤이네의 경험담과, 개인적으로 너무나 예상외였던 몇 가지 변수들을 공유해본다. &nbsp; &nbsp; &nbsp; 믿고 가는 이스탄불 &nbsp; 이스탄불은 이 여행에서 가장 걱정이 없었던 곳이다. &nbsp; 친구와 만나는 것만으로도 의미가 있었지만 그것뿐만은 아니다. &nbsp; 이스탄불은 비가 와도 운치 있고 겨울에도 거리에 사람이 많고 먹을 데도 많아서 돌아다니는 재미가 클 것이 분명해보였다. &nbsp; 물론 비가 오면 걷기가 좀 더 힘들겠지만 어차피 ‘집 나오면 고생’이라고, 장거리 여행자는 이미 어느 정도의 번거로움을 감수할 준비가 되어 있는 것이다. &nbsp; 벌써 다녀온 지 세 달이 넘었지만 여전히 기억에 남는 이스탄불 주요 스팟과 먹거리를 대략 적어보았다. &nbsp; [대충 생각나는 포인트] 이스티클랄 거리, 돌마바흐체 궁전, 고등어케밥, 아야소피아, 블루모스크, 귤루올루 카페, 보스포러스 크루즈, 이을드즈 공원, . . . &nbsp; 처음 3박4일 머물 때와 집에 가기 전 2박3일 일정에서 아직도 기억에 남는 것들이다. &nbsp; 대충 한 번에 써내려간 것만 해도 이렇게나 되는데, 이 중에서 크루즈와 공원을 제외하면 즐기는 데에 날씨도 별로 문제가 안 된다. &nbsp; &nbsp; 흐린 날, 돌마바흐체 궁전 실내에서 내려다본 정박장의 문. 파디샤가 배를 타던 곳이라고 한다. &nbsp; &nbsp; 다만 날씨가 안 좋으면 당연히 다닐 때 불편함은 있으므로 비수기에는 더더욱 동선을 미리 고려해 숙소와 교통편을 알아보는 게 좋다. &nbsp; 주헤이처럼 이스탄불에서 보내는 시간이 한정적인 경우는 보통 신시가지의 탁심 광장 근처 또는 구시가지의 술탄 아흐메트 근처에 묵는다. &nbsp; 시간적 여유가 있다면 아시아 지구나 근교 다른 지역에 머물 수도 있을 것이다. &nbsp; 이스탄불 숙소 &nbsp; 주헤이네는 처음 갔을 때 구시가지에 묵었고 두 번째 방문 때는 신시가지에 묵었다. &nbsp; 구시가지에서 본 전차. 술탄 아흐메트를 방향으로 달리고 있다. &nbsp; &nbsp; 구시가지에서 묵은 곳은 메스트 호텔(Mest Hotel)이고, 신시가지에서 묵은 곳은 에스 호텔(Ess Hotel)이다. &nbsp; 호텔들의 가격은 시기마다 천차만별이라서 이 두 곳도 마냥 합리적이라고 할 순 없지만 일단 비싸지 않게 잘 찾아서 예약만 한다면 두 군데 다 아주 추천한다. &nbsp; 호텔들에 대한 자세한 내용은 아래 리뷰 페이지에서 다룬다. &nbsp; [호텔] 이스탄불 숙소 이용 후기 - MEST HOTEL / ESS HOTEL &nbsp; &nbsp; 이스탄불 교통편과 물가 &nbsp; 이스탄불 시내 주요 관광지는 대부분 트램과 버스와 페리로 갈 수 있다. &nbsp; 페리라고 하면 약간 무겁게 들릴 수도 있는데 이스탄불에서의 페리는 버스나 트램처럼 자주 다니면서 빠르게 타고 내리는, 가벼운 교통수단이다. &nbsp; 그리고 이 세 교통수단은 모두 트래블로그나 SOL트래블 카드로 이용 가능하므로 전용 교통카드(충전용/1회용) 구매가 필수는 아니다. &nbsp; 단, 트래블 카드같은 일반 태그리스 카드 이용 시 전용 교통카드보다 이용 금액이 좀 더 비싸다. &nbsp; 충전식 교통카드는 카드 구매 비용도 들기 때문에 주헤이는 단기간 여행할 경우 비용 차이가 크지 않다고 생각해서 트래블 카드로 찍고 다녔다. &nbsp; 그런데 교통비가 예상보다 더 늘어난 사건이 있었다. &nbsp; 우리가 다른 도시를 여행하고 9일만에 이스탄불로 돌아왔더니 버스비가 이전보다 20%나 더해진 가격으로 찍힌 것이다. &nbsp; 예를 들어, 1회 50리라로 찍히던 버스 요금이 일주일 만에 60리라로 올라 있었다. 2026년 2월에 겪은 실화다. &nbsp; 나중에 DJ가 현지인들이 주로 이용하는 이발소에 이발하러 갔다가 들었는데, 당시 튀르키예의 인플레이션이 극심해서 공공요금이 거의 6개월마다 인상된다고 했다. &nbsp; 그런데 그 인상 기준일이 마침, 2주밖에 안 되는 우리 여행 기간 중 딱 중간에 낀 날짜여서 물가 상승을 여실히 느끼게 된 거였다. &nbsp; 당시 환율로 말하면, 원화 기준으로 대략 1600원에서 2000원으로 오른 것이라서 서울 물가에 비하면 적어도 그 때까진 아직 낼 만하다 싶은 수준이었지만, 앞으로는 또 어떨지 모르겠다. &nbsp; 탁심 광장 아래에 위치한 버스 정류장과 버스 내부 &nbsp; 그렇지만 아무튼 이스탄불 시내 어딜가든 대중교통이 잘 되어 있어 정말 편리했고 관광지로 가는 건 대부분 지상으로 다녀서 도시 전경이 잘 보이는 점이 좋았다. &nbsp; &nbsp; &nbsp; &nbsp; 카파도키아 유적지 드라이브 &nbsp; 겨울에는 카파도키아에서 열기구를 못 탈 가능성이 상당히 높다. &nbsp; 그렇지만 유적지나 자연을 좋아하는 사람이라면, 카파도키아에서 열기구를 못 타더라도 여행지로 선택한 것에 후회가 없을 것이다. &nbsp; 주헤이에게 무엇보다 인상적이었던 건 카파도키아 근교를 운전하면서 보았던 풍경들이었다. &nbsp; 어떨 땐 2시간을 비슷한 지형을 보면서 달리는데도 시시각각 흘러가는 구름 때문에 계속 새롭고 신선하게 다가왔던 그 풍경이, 지금도 생생하다. &nbsp; 괴레메에서 소금호수까지 드라이브 다녀오는 길목. &nbsp; &nbsp; 렌트카 운전 vs 가이드 투어 &nbsp; 주헤이는 자유여행을 워낙 좋아하기 때문에 처음부터 렌트카를 염두에 두었다. &nbsp; 반면, 레드 투어나 그린 투어라고 불리는 당일 패키지 여행들도 워낙 이용자가 많아서 평이 좋은 상품들이 많이 있다. &nbsp; 운전하기 어려운 상황이라 불가피하게 버스 투어를 선택하는 사람들도 많지만, 딱히 그게 아니더라도 주헤이는 렌트카 이용만을 권장하지는 않는다. &nbsp; 현지 사정을 잘 아는 가이드의 안내를 받는 것과 직접 렌트카를 운전해 다니는 것에는 각기 분명한 장점과 단점이 공존한다. &nbsp; 렌트카는 타인과 접촉할 일이 적고 일정을 여유 있게 조정할 수 있어서 주헤이 가족의 성향에 아주 잘 맞는다. &nbsp; 반면에 설명이 필요한 관광지에서는 단체 여행객의 진행 방향을 눈치로 봐가면서 귓동냥으로 해결할 때도 있었다. &nbsp; 어느 정도 번거로운 부분이었다. &nbsp; 주헤이가 그런 상황을 예상 못한 건 아니지만 가이드 투어를 선택하지 않은 데엔 나름 이유가 있다. &nbsp; 가이드 설명을 들어도 재미 있었겠지만 괴레메 야외박물관을 제외한 다른 관광지는 내부 구조나 사용 시기에 대한 고증이 부족한 경우가 많다고 한다. &nbsp; 따라서 주헤이는 각 관광지에서는 누군가의 추측으로 적혔을 공간 용도만 참고하고, 설명이 더 필요한 경우에는 추가로 검색을 해보는 것으로 충분하다고 생각했다. &nbsp; 어차피 반쯤 다른 이의 상상으로 설명해주는 거라면, 약간의 힌트만 듣고 나머지를 내 상상으로 채워보는 것도 재밌지 않을까. &nbsp; 반면에 힌트를 찾거나 상상해야 하는 게 큰 번거로움으로 다가온다면 오히려 가이드 설명을 듣는 것이 더 재미있을 것이다. &nbsp; 으흘랄라 계곡은 날씨가 안 좋아서 안 가려다가 비가 안 오길래 잠깐 들러서 구경했다. 마음이 내키는 대로 움직일 수 있다는 건 자유여행의 가장 큰 매력이다. &nbsp; &nbsp; 또한, 자유여행의 단점이 이것만은 아니다. &nbsp; 여행 중 예기치 못한 사고가 발생할 가능성은 언제나 열려 있다는 것을 기억해야 한다. &nbsp; 어느 정도의 변수들을 스스로 감수할 수 있다면 선택의 폭이 넓어지지만, 감내할 마음이 처음부터 없다면 가이드 투어를 선택하는 게 좋다. &nbsp; 그런 점에서, 주헤이는 카파도키아 여행 후기들에서 다양한 렌트 사례를 찾아봤고, 어지간한 변수는 대비할 수 있겠다고 생각했다. &nbsp; 주헤이가 한 ‘대비’란 다음과 같다. &nbsp; 여행 경로에서 위급한 상황에 놓였을 때 닿을 수 있는 인프라가 있는지 알아보고, 구글 지도에서 오프라인 지도를 다운로드하고, 렌터카/투어 업체 후기를 통해 사고 발생 시 업체 연락이 잘 되는지 확인하는 것 등. &nbsp; 실제로 렌트카와 관련해 주헤이에게도 작은 변수가 발생했지만 모두 무난하게 해결할 수 있었다. &nbsp; 주헤이가 예약한 렌터카 업체는 선셋렌터카(Sunset rent a car)라는 업체로, 한국인들도 많이 이용했고 구글 지도 리뷰도 아주 좋았다. &nbsp; 선셋렌터카는 아래 설명할 켈레벡 호텔 등 동굴 호텔들과 가까운 곳에 사무실이 위치해 있어서 차를 주고 받기도 쉽다. &nbsp; 주헤이가 빌린 차는 오토 종류이기는 했지만, 한국에서 쓰던 자가용과 다르게 언덕에서 엑셀을 밟아도 힘을 받는 속도가 느려서 기존 습관대로 운전을 하면 언덕에서 저속으로 갈 때 가끔 차가 뒤로 밀리기도 했다. &nbsp; 주헤이네는 차량에 익숙해질 겸해서 공항에서 차를 수령했고, 호텔 가는 길까지는 경사로도 문제없이 지나왔다. &nbsp; 그런데 호텔에 거의 다다랐을 때쯤 호텔들이 모인 골목의 경사로 입구에서 차가 뒤로 밀리는 경험을 처음으로 하게 됐다. &nbsp; 골목이 좁지 않아서 후방이 부딪히지는 않았지만, 차 뒷쪽에 더 이상 여유 공간이 없어서 곧바로 다시 시도해볼 자신이 없었다. &nbsp; 그래서 선셋렌터카에 왓츠앱으로 문의했더니 곧바로 담당자가 차량 위치로 와줬다. &nbsp; 담당자는 운전 방식을 설명해주는 김에 호텔 주차장에다가 주차를 해줬고, 연락 받고 오는 김에 원래 주헤이가 사무실로 가서 받기로 했던 차량 렌탈 계약서도 같이 가져와서 그 자리에서 처리해줬다. &nbsp; 사무실이 가까워서 가능한 거였겠지만 주헤이네 가족은 그가 정말 고마웠다.. &nbsp; 카파도키아 동굴 호텔 &nbsp; 카파도키아에 가는 관광객은 대부분 괴레메에 위치한 호텔들 중 하나를 이용하게 된다. &nbsp; 그리고 동굴 호텔은 한 번쯤 이용해볼 만하다고 생각한다. &nbsp; 괴레메의 고급 호텔들은 겨울에도 여지없이 비싸지만 성수기에 비해 겨울이 훨씬 덜하기는 해서, 주헤이네도 동굴 숙소 중 유서 깊다는 켈레벡 스페셜 케이브 호텔에 묵어보기로 했다. &nbsp; 평소에는 바쁘게 관광하느라 숙박에 돈을 아끼지만, 겨울은 아무래도 날씨가 안 좋을 때도 있고 해도 빨리 지니 숙소에 좀 더 머물게 될 것 같았다. &nbsp; 결론적으로 아주 잘한 결정이었다. &nbsp; 주헤이네는 열기구는 결국 못 봤지만 동굴 호텔을 기대한 만큼 아늑하고 알차게 즐겼다. &nbsp; 호텔방도 이색적이지만 괴레메에서 동굴 호텔들과 주변 지형이 이루는 풍경도 장관이다. &nbsp; 켈레벡 동굴 호텔, 주헤이가 묵은 패밀리룸 현관 앞에서 본 풍경. &nbsp; 켈레벡 호텔은 뷰가 좋은 괴레메 언덕 중턱에 있고 열기구 뷰가 가장 좋기로 소문난 술탄 케이브 호텔과 자매 호텔로 되어 있어서, 술탄 케이브 뷰 스팟도 이용 가능하다고 한다. &nbsp; 그 밖에도 호텔 바로 앞에 숙박객 전용 주차장이 있다는 점, 호텔 내에 하맘 서비스(유료)가 있다는 점, 근처에 식당이 많다는 점, 주요 거리가 가까워 도보로 오가기 쉽다는 점, 패밀리룸이 있다는 점 등 많은 장점이 있다. &nbsp; 그 밖의 자세한 내용은 아래 페이지에 적어두었다. [호텔] 카파도키아 숙소 후기 - KELEBEK HOTEL &nbsp; &nbsp; 비수기의 카파도키아 ATM &nbsp; 2026년 2월의 튀르키예를 돌아다니면서 ‘비수기는 비수기구나’하고 느꼈던 점 중 하나는 빈 ATM 기기에 돈이 금방 채워지지 않는다는 점이었다. &nbsp; 그래도 이스탄불같은 대도시에서는 내가 필요한 은행 ATM 기기에 돈이 없다고 나와도 다른 ATM 기기를 만날 기회가 많아서 괜찮았다. &nbsp; 주헤이는 트래블로그 카드를 사용해서 Ziraat와 Halkbank를 주로 썼는데 ATM이 둘 다 있는 경우는 둘 중 하나에서 출금이 가능한 적도 있었지만 그렇지 않고 인출이 불가한 경우도 종종 있었다. &nbsp; 그런데 괴레메에서는 기껏 찾은 ATM 기기에 돈이 없어서 출금을 못 했는데, 가까운 거리에 다른 ATM도 없었다. &nbsp; 다음 날, 같은 ATM 기기 앞을 지나게 되어서 혹시나 싶어 다시 시도해봤지만 사정은 같았다. &nbsp; 그 이후는 잘 기억이 안 나는데 아마 있는 돈 죄다 긁어모아 사용하다가, 근교의 다른 관광지에서 만난 ATM에서 그나마 추가로 출금을 했던 것 같다. &nbsp; 따라서 웬만하면 대도시에 머물 때 현금을 미리 준비해두기를 권한다. &nbsp; 카파도키아 공항, 네브셰히르로 갈까, 카이세리로 갈까 &nbsp; 카파도키아는 아무래도 이스탄불에 비하면 작은 도시라서 공항들도 작다. &nbsp; 네브셰히르 공항에서 다음 여행지로 가기 위해 대기했던 곳. 우리가 갔을 땐 한쪽 게이트만 사용 중이었다. &nbsp; &nbsp; 괴레메 근처에는 네브셰히르(NAV) 공항과 카이세리(ASR) 공항이 있다. &nbsp; 네브셰히르 공항이 괴레메와 더 가까워서 주헤이는 크게 고민 안 하고 네브셰히르로 선택했지만, 다음 번에 다시 갈 일이 생긴다면 카이세리 공항으로 가보고 싶다. &nbsp; 네브셰히르라는 소도시는 공항 근처가 아니라 괴레메 옆에 위치해 있다. 네브셰히르 공항 근처에는 아무것도 없고 거길 벗어나서 괴레메 근처까지 나와야 식당이나 볼 것들이 좀 있다. &nbsp; 반면에 카이세리 공항은 카이세리 도심과 가까운데, 카이세리는 인구가 약 100만 명이고 카파도키아 인근에서는 규모 있는 도시에 속한다. &nbsp; 네브셰히르 공항에서 풍경만 보며 이동하는 것도 좋았지만, 카이세리 공항에서 괴레메로 이동한다면 도중에 식사를 하거나 구경할 것이 더 있을 것 같다. &nbsp; &nbsp; &nbsp; 튀르키예와 그리스 모두 방문한 순서대로 얘기를 풀어보려고 했는데 예상보다 내용이 많아져서 둘로 나누게 됐다. &nbsp; 그리스 아테네와 크레타섬 여행에서 경험한 것은 다음 편에서 들여다보자. &nbsp; (4편에서 계속)  </span>
+    </p>
+  </div>
+</article>
+</div>
+
+
+
+
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <div class="right-rail-image rr-focus-center-right" role="img" aria-label="Right sidebar image" style="background-image: url('/assets/images/site/sidebar-right.jpg?v=1776269532');"></div>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits" style="margin-top:0.5rem;font-size:0.625rem;color:#9ca3af;letter-spacing:0.02em;">
+  Font: <span style="font-family:'JejuMyeongjo',serif">제주명조체</span> (제주특별자치도), <span style="font-family:'MapoGoldenPier',cursive">마포금빛나루체</span> (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+<!-- end custom footer snippets -->
+
+        
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/search/site-search.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>

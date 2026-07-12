@@ -1,0 +1,781 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>페이지를 찾을 수 없습니다 | ju-hey.log</title>
+<meta name="description" content="요청하신 페이지가 존재하지 않습니다.">
+
+<meta name="robots" content="noindex, follow">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="페이지를 찾을 수 없습니다">
+<meta property="og:url" content="https://juheyday.github.io/404.html">
+
+
+  <meta property="og:description" content="요청하신 페이지가 존재하지 않습니다.">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/404.html">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  scheduleIdleHide();
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+
+
+
+
+<div id="main" class="single-main-grid" role="main">
+  
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="페이지를 찾을 수 없습니다">
+    <meta itemprop="description" content="요청하신 페이지가 존재하지 않습니다.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header class="page__header">
+          
+          <div class="page__header-content">
+            <div class="page__title-row">
+              <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                <a href="https://juheyday.github.io/404.html" itemprop="url">페이지를 찾을 수 없습니다
+</a>
+              </h1>
+
+              
+            </div>
+
+            <div class="page__header-meta">
+              
+
+  
+
+  
+
+
+              
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </header>
+      
+
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+        
+        <p>요청하신 페이지가 존재하지 않거나 이동되었습니다.</p>
+
+<p><a href="/">홈으로 돌아가기</a> · <a href="/travel/">여행 글 보기</a> · <a href="/picks/">Picks 글 보기</a></p>
+
+        
+      </section>
+
+      
+
+      
+
+
+
+<div class="post-actions-bar">
+  <div class="post-actions-bar__primary">
+    
+      
+      
+      
+      <button class="post-action-btn post-like-btn" data-like-post="_pages/404.md" aria-label="Like this post">
+        <svg class="like-heart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <span class="like-count"></span>
+      </button>
+    
+
+    
+  </div>
+
+  <button class="post-action-btn post-top-btn" type="button" aria-label="맨 위로 이동" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5"/><path d="m5 12 7-7 7 7"/>
+    </svg>
+    <span>맨 위</span>
+  </button>
+
+  
+</div>
+
+<style>
+  /* Post footer actions: related controls on the left, navigation on the right. */
+  .post-actions-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    clear: both;
+    padding-top: 1.5em;
+  }
+
+  .post-actions-bar__primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+  }
+
+  .post-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 0.72rem;
+    border: 1px solid #d8dde3;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.84);
+    color: #7a8795;
+    font-family: 'Jeju Myeongjo', 'JejuMyeongjo', Georgia, serif;
+    font-size: 0.68rem;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    user-select: none;
+  }
+
+  .post-action-btn:hover {
+    border-color: #c5b9ae;
+    background: #faf8f5;
+    color: #66594e;
+  }
+
+  .post-like-btn {
+    gap: 0.3rem;
+    min-width: 34px;
+    padding-inline: 0.55rem;
+  }
+  .post-like-btn.has-count { padding-inline: 0.6rem; }
+  .post-like-btn:hover { border-color: #d8aea7; color: #b96860; }
+  .post-like-btn.liked { border-color: #d8aea7; color: #b65d56; background: #fff9f8; }
+  .post-like-btn .like-heart { width: 16px; height: 16px; transition: transform 0.2s; }
+  .post-like-btn .like-count { display: inline-block; line-height: 1; font-variant-numeric: tabular-nums; }
+  .post-like-btn:active .like-heart { transform: scale(1.3); }
+  .like-count:empty { display: none; }
+
+  .post-share-btn {
+    width: 34px;
+    padding: 0;
+  }
+
+  .post-top-btn {
+    gap: 0.32rem;
+    padding-inline: 0.62rem 0.72rem;
+  }
+  .post-top-btn svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  /* ── Share modal overlay ── */
+  .share-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+  }
+  .share-modal-overlay.is-visible { display: flex; }
+
+  /* ── Share modal box ── */
+  .share-modal {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem 1.75rem 1.25rem;
+    width: 320px;
+    max-width: 90vw;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    animation: share-modal-in 0.2s ease-out;
+  }
+  @keyframes share-modal-in {
+    from { opacity: 0; transform: scale(0.95) translateY(8px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .share-modal__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #94a3b8;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.25rem;
+  }
+  .share-modal__close:hover { color: #334155; }
+  .share-modal__title {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .share-modal__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .share-modal__link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #334155;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .share-modal__link:hover { background: #f1f5f9; border-color: #cbd5e1; }
+  .share-modal__link i,
+  .share-modal__link svg { flex-shrink: 0; font-size: 1.1rem; }
+  .share-modal__link--x:hover { color: #000; }
+  .share-modal__link--facebook:hover { color: #1877f2; }
+  .share-modal__link--linkedin:hover { color: #0a66c2; }
+  .share-modal__link--bluesky:hover { color: #0085ff; }
+  .share-modal__link--copy { font-family: inherit; }
+  .share-modal__link--copy:hover { color: #16a34a; }
+</style>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <div class="right-rail-image rr-focus-center-right" role="img" aria-label="Right sidebar image" style="background-image: url('/assets/images/site/sidebar-right.jpg?v=1776269532');"></div>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+
+  
+  
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.page__header');
+  const title = header ? header.querySelector('.page__title') : null;
+  if (!header || !title) return;
+
+  const syncHeaderHeight = () => {
+    header.style.setProperty('--page-header-extra-height', '0px');
+
+    const computed = window.getComputedStyle(title);
+    const lineHeight = parseFloat(computed.lineHeight);
+    if (!lineHeight || Number.isNaN(lineHeight)) return;
+
+    const titleHeight = title.getBoundingClientRect().height;
+    const lines = Math.max(1, Math.round(titleHeight / lineHeight));
+    const extraLines = Math.max(0, lines - 1);
+    const extraHeight = extraLines * lineHeight;
+
+    header.style.setProperty('--page-header-extra-height', `${extraHeight}px`);
+  };
+
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight, { passive: true });
+
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(syncHeaderHeight);
+    observer.observe(title);
+  }
+});
+</script>
+
+
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits" style="margin-top:0.5rem;font-size:0.625rem;color:#9ca3af;letter-spacing:0.02em;">
+  Font: <span style="font-family:'JejuMyeongjo',serif">제주명조체</span> (제주특별자치도), <span style="font-family:'MapoGoldenPier',cursive">마포금빛나루체</span> (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+<!-- end custom footer snippets -->
+
+        
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/search/site-search.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,569 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>겨울 산토리니 | ju-hey.log</title>
+<meta name="description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+<meta name="robots" content="noindex, follow">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="겨울 산토리니">
+<meta property="og:url" content="https://juheyday.github.io/tags/%EA%B2%A8%EC%9A%B8-%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88/">
+
+
+  <meta property="og:description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/tags/%EA%B2%A8%EC%9A%B8-%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--tag" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  scheduleIdleHide();
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" class="archive-main-grid" role="main">
+  
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">겨울 산토리니</h1>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="category-post-list" data-archive-post-list data-page-size="10">
+
+
+
+
+
+
+      
+      
+      
+        
+          
+          
+      
+
+
+
+
+
+
+<article class="category-post-item" data-category-post-item itemscope itemtype="https://schema.org/CreativeWork">
+  
+    <a class="category-post-item__image" href="/travel/post-002/" tabindex="-1" aria-hidden="true">
+      <img src="https://ju-hey-console.vercel.app/api/images/post-002/b86d19a0-9dd4-4be4-8716-767ba424dc5f.jpg" alt="" loading="lazy">
+      
+
+  
+  
+  
+  
+  <span class="post-card-readtime"><i class="far fa-clock" aria-hidden="true"></i>5 min</span>
+
+
+    </a>
+  
+  <div class="category-post-item__body">
+    <h2 class="category-post-item__title" itemprop="headline">
+      <a href="/travel/post-002/" rel="permalink">[남유럽 2개국] 2026년 2월 비수기 자유여행 계획 (2) - 여행 경로 조정하기
+</a>
+    </h2>
+    <p class="category-post-item__meta">
+      <time datetime="2026-05-23T00:00:00+09:00">2026.05.23</time>
+      <span aria-hidden="true">/</span>
+      <span>Travel</span>
+    </p>
+    <p class="category-post-item__summary p-summary" itemprop="description">
+      <span class="category-post-item__excerpt">겨울 튀르키예와 그리스의 여행지를 정하기까지.. 일찍부터 험난한 여정</span><span class="category-post-item__separator" aria-hidden="true"></span><span class="category-post-item__body-preview">아래는 최종 결정되어 다녀온 주헤이의 14박 16일 여행 일정이다. 2026년 2월, 14박16일 비수기 유럽 여행 일정 &nbsp; &nbsp; 보다시피 도시간 이동이 많고 대부분 비행기로 이동했다. &nbsp; 카파도키아에서 아테네로 갈 때는 이스탄불을 경유했기 때문에 총 7대의 비행기를 탔다. &nbsp; 주헤이네는 엄마를 모시고 즉흥 여행을 할 생각이 없었으므로 주요 동선을 미리 정해서 숙소와 교통편을 예약해야 했다. &nbsp; 튀르키예에서는 가장 유명한 관광 도시인 이스탄불과 세계에서 열기구로 가장 유명한 카파도키아, 이렇게 2개 지역을 골랐다. &nbsp; 이 밖에도 수도 앙카라나, 카파도키아가 있는 일정과 묶어서 파묵칼레나 안탈리아도 많이들 간다. &nbsp; 그렇지만 앙카라는 볼 것이 많아서 다음에 제대로 보고 싶었고, 파묵칼레나 안탈리아가 포함된 투어는 시간과 체력이 너무 들어서 포기하기로 했다. &nbsp; 흐린 날도 운치있는 이스탄불(사진 2, 3). 카파도키아의 야경과 자연 경관(사진 4, 5). 맑은 날 다시 만난 이스탄불(사진 6). &nbsp; &nbsp; 사실 주헤이는 한 국가에만 머물면서 여러 도시를 진득하게 둘러보고 싶었다. &nbsp; 그렇지만 엄마가 그리스까지 가보고 싶어 하셨고, 2026년 02월 기준으로 그리스는 아직 한국에서 출발하는 직항 항공편이 없기 때문에 이 기회에 가보는 것도 좋겠다는 생각이 들었다. &nbsp; 그런 연유로 고른 그리스 여행지는, 수도인 아테네와 크노소스 궁전으로 유명한 크레타 섬이었다. &nbsp; 활기찬 아테네(사진 7, 8)에 비해 고요하고 차분한 크레타섬 시내(사진 9, 10, 11). 모두 2월 중순에 찍은 풍경이다.   &nbsp; 그리고 이걸 들은 주헤이 엄마의 질문... “그리스 가면 그, 유명한 거기, 산토리니? 거기도 가는 거지?” &nbsp; 음......?? 갑자기 산토리니를?? &nbsp; 산토리니 하면 떠오르는 파란 지붕의 하얀 집 Source. Russell_Yan (Pixabay)   &nbsp; 비수기 산토리니, 과연 감행해도 될까 &nbsp; 앞서 1편에서도 언급했듯이 결과적으로 산토리니를 못 가게 됐지만, ‘최초에’ 계획할 때는 엄마의 바람으로 산토리니도 일정에 포함돼 있었다. &nbsp; 최초에 계획했던 일정에는 산토리니 섬이 포함되어 있었다. 그리고 취소됐다. &nbsp; 그리스의 산토리니 섬. 아주 작은 섬인데도 매년 여름엔 관광객으로 미어터진다는 곳. &nbsp; 그럼 겨울의 산토리니는 어떨까? 산토리니를 계획에 넣어 놓고도 불안해서 겨울 관광 후기들을 찾아서 꼼꼼히 읽어봤더니 2가지로 요약할 수 있었다. &nbsp; 남들이 겨울에 가지 말라고 하는 덴 이유가 있다. 겨울에는 가게들이 거의 영업을 안 한다. &nbsp; 특히 2번은 산토리니에만 국한된 얘기가 아니라 그리스 섬들 모두 해당되는 얘기였다. &nbsp; 주헤이는 이런 이유들로 인해 산토리니 숙박과 일부 항공편을 이미 예약해둔 것을 뒤늦게 후회했다. &nbsp; 그런데 여기에 몇 가지 사건이 더해지면서 산토리니 일정을 취소해야만 하는 상황이 기어이 와버렸다. &nbsp; 정황을 설명하자면 이렇다: 산토리니 숙소(Agoda)와 산토리니에서 나가는 [산토리니 -&gt; 이스탄불] 직항 항공편(Aegean Airlines)을 먼저 예약해뒀다. 나중에 산토리니로 들어가는 배편도 예약하려고 봤더니, 겨울에는 [크레타 -&gt; 산토리니] 배편이 주 2회밖에 없었다. 우리가 산토리니에 가려는 요일에는 배가 아예 없었고, 다른 일정과 바꿔보려고 해도 무리였다. 일정에 맞춰 크레타에서 산토리니로 가려면 아테네를 경유하는 [크레타 -&gt; 아테네 -&gt; 산토리니] 비행기를 타야 한다. 그런 와중에 에게항공으로부터, 예약해두었던 [산토리니 -&gt; 이스탄불] 직항 스케줄이 없어졌다는 통보가 왔다. (사실 이때 취소했으면 무료로 취소 가능한데, 상황이 이렇게까지 꼬일 줄 모르고 변경 배치된 경유 일정을 확정해버렸음) 여행 시작까지 겨우 일주일이 남아 있었다. &nbsp; 다시 말해, 산토리니에서 1박만 하려고 했는데, 들어갈 때/나올 때 양방향 모두 1회씩 경유를 해야 돼서 산토리니에서는 밤잠만 자고 나오게 생긴 것이다. &nbsp; 안 그래도 비행기를 많이 타는 일정인데 주헤이네 엄마는 이제 연세도 있으셔서 그 이동 횟수를 전부 소화하기도 어려웠다. &nbsp; 아고다로 예약한 값비싼 숙소가 환불 불가라고 해도 이제는 계획을 바꿔야만 했다. &nbsp; 아고다 무료 취소 요청하기 &nbsp; 2026년 현재는 아고다에서 무료 취소 기한이 지난 숙소도 아고다 플랫폼을 통해 무료 취소 요청을 시도해볼 수 있다. &nbsp; 이건 주헤이가 야밤에 좌절하고 있으니 DJ가 알아봐준 정보였다.(고마워라ㅜ) &nbsp; 여행을 일주일 앞둔 1월 말 당시에는 워낙 마음이 급했던 터라 캡처해둔 게 없지만, 아고다 사이트 내에서 환불불가 숙소의 예약 내역에 들어가보면 무료 취소 요청을 해볼 수 있게 버튼이 있다. &nbsp; 이 요청을 수락할지 정하는 것은 아고다가 아니고, 아고다를 통해서 숙소에 고객이 직접 수락 요청을 하는 제도이다. &nbsp; 이 요청을 숙소 측에서 거절하면, 예약 시 동의한 정책대로 숙박비를 지불해야 한다. &nbsp; 따라서 아고다의 무료 취소 요청 버튼을 클릭해서 불가피하게 취소하게 된 사유를 적어 내서 1차 호소를 한 다음, 아고다 메시지나 이메일 등을 추가로 보내서 숙소에 재차 양해를 구하는 것이 좋다. &nbsp; 주헤이의 경우 가족(=엄마)의 건강이 걱정되어 일정을 변경하게 되었다는 사연을 보내면서, 해당 숙소의 훌륭한 시설을 다음 기회에는 꼭 경험해보고 싶다는 말을 덧붙였다. &nbsp; 감사하게도 산토리니의 숙소에서는 이튿날 바로 무료 취소를 수락해주겠다는 답변을 주었다. &nbsp; 무료 취소 처리까지의 소요 시간 &nbsp; 산토리니의 1박 숙소에 대해 주헤이네가 예약한 방은 2개였는데, 답변 받고 나서 이틀 뒤에 1개만 먼저 취소되었다. &nbsp; 이유는 모르겠지만 나머지 1개의 방은 이틀이 더 지나고 나서야 취소 처리가 되었다. &nbsp; 나머지 1개까지 취소하기 위해 아고다 고객센터에 문의한 후기는 바로 뒤에 이어서 설명하겠다. &nbsp; 아무튼 취소가 완료되고도 카드 환불까지는 더 오래 걸렸지만 일단 100% 환불이 된다는 것에 마음을 놓을 수 있었다. &nbsp; 아고다 고객센터 문의 후기 &nbsp; 한국만큼의 서비스 처리 시간을 기대하면 안 되겠지만... 그렇다고 참고 기다리지도 못하는 한국인이라, 2개 방 모두 취소 처리가 완료되기까지 아고다 고객센터에 채팅 문의와 전화 문의를 여러 번 했었다. &nbsp; 아고다 한국 지부가 있다고 들어서 문의를 넣으면 한국인 직원이 응대해주는 경우도 있을 줄 알았는데 채팅과 전화 모두 영어로 답변을 받았다. (평일 낮 시간대) &nbsp; 채팅 메시지는 자동 번역된 한국어로 왔고 전화 연결도 빨라서 전반적으로 소통엔 문제 없었다. &nbsp; 그렇지만 이미 확인을 마친 것에 대해서도 재차 설명을 요청 받았고 소통 과정들이 느리게 느껴져서 답답했다. &nbsp; 그렇지만 일련의 과정들을 겪어보니, 중간중간 문의를 넣어 재촉하지 않았다면 기약 없이 기다렸을 수도 있겠다는 생각이 든다. &nbsp; 만약 주헤이의 경우처럼 아고다에서 취소해주기로 한 예약 건들 중 일부분만 취소되는 경험을 했다면, 번거롭더라도 마냥 대기하지 말고 반드시 고객센터에 문의 넣어 확인해보길 권한다. &nbsp; 에게항공 예약 변경 방법 &nbsp; 숙소에는 문의를 넣어뒀으니 이제 항공권 차례다. &nbsp; 가야 하는 날짜에 산토리니행 배편이 없다는 것을 주헤이가 알아차린 때는 주말 저녁이었고, 산토리니 일정을 취소하기로 마음 먹고 나서 숙소에 취소 요청가지 하고 났을 땐 이미 새벽 1시였다. &nbsp; 그렇지만 항공권 변경까지 마무리해두지 않고는 잠이 올 것 같지 않았다. &nbsp; 알아보니 에게항공을 포함한 많은 항공사들의 항공권 변경/취소가 웹사이트와 앱 내에선 불가하고 전화 문의를 통해서만 가능했다. &nbsp; 일부 항공사들은 그조차 쉽지 않은 듯했지만 에게항공은 변경취소를 안 해주는 건 아니므로 24시간 열려 있는 전화 문의를 이용하기로 했다. &nbsp; 국제전화를 한국에서 직접 걸어보기는 처음이라 요금이 좀 걱정됐지만 이미 다른 수단을 알아보기엔 지쳐서 그냥 걸었다. &nbsp; 2026년 1월 말, SKT 00700 연결로 약 25분간 통화했고 3만 원 가량 나왔다. &nbsp; 에게항공 통화 연결 후기 &nbsp; 예약 변경을 위해 사전에 준비한 것: 번역기 예약번호 변경할 항공 스케줄(변경 전, 변경 후) 항공권 결제할 카드 &nbsp; 주헤이의 영어가 짧긴 해도 대충 일방적인(!) 의사 전달은 가능하다. &nbsp; 다만 듣기가 잘 안 된다(이건 꼭 영어라서 그런 건 아닌 듯하지만 아무튼). &nbsp; 그래서 따로 준비한 번역기를 들고 25분간 상담원과 통화를 한 결과는, 아주 만족스러웠다. &nbsp; 겨울이라 그랬을 수도 있지만, 산토리니든 크레타든 그리스에서 출발해서 튀르키예로 가는 직항 스케줄이 몇 안 된다. (대부분은 아테네 경유) &nbsp; 이미 취소되었던 우리의 [산토리니 -&gt; 이스탄불] 스케줄처럼, 직항이 있어도 취소되는 일이 왕왕 있다. &nbsp; 그래서 주헤이는 스스로도 모르게 [이라클리온 -&gt; 이스탄불] 직항도 없을 거라고 생각해서 아테네 경유 비행기로 바꿔달라고 상담원분께 요청했다. &nbsp; 상담원분은 한 가지 설명할 때마다 주헤이가 3번씩 묻는데도 인내심 있게 진행하면서 이스탄불행 직항이 있다는 점도 확인해주었다. &nbsp; 수수료와 추가 결제분 등 번역기를 가지고도 다 이해하지는 못 했지만 대충 변경할 새 항공권이 더 비싸서 추가분을 더 결제하는 방식으로 진행된다는 건 알 수 있었다. &nbsp; 나중에 계산해보니 수수료는 약 13만 원, 변경 전 항공권 가격 기준으로는 약 18% 정도가 수수료로 들었다. (2026년 1월) &nbsp; &nbsp; 아무튼 정말로... 산토리니로 들어가는 배편이 없다는 걸 처음 알았을 땐 100만 원 가까이 날리는 줄 알고 심장이 벌렁거렸는데! &nbsp; 그러지 않아서 지금 생각해도 너무 감사하다ㅎㅎ 정말 잊지 못할 해프닝이었고 잠깐 사이에 또 많은 걸 배웠다. &nbsp; 다음 편은 여행 계획편의 마지막 파트로, 비수기 여행의 준비 포인트를 몇 가지 적어봐야겠다. &nbsp; &nbsp; (3편에서 계속)  </span>
+    </p>
+  </div>
+</article>
+</div>
+
+
+
+
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <div class="right-rail-image rr-focus-center-right" role="img" aria-label="Right sidebar image" style="background-image: url('/assets/images/site/sidebar-right.jpg?v=1776269532');"></div>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits" style="margin-top:0.5rem;font-size:0.625rem;color:#9ca3af;letter-spacing:0.02em;">
+  Font: <span style="font-family:'JejuMyeongjo',serif">제주명조체</span> (제주특별자치도), <span style="font-family:'MapoGoldenPier',cursive">마포금빛나루체</span> (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+<!-- end custom footer snippets -->
+
+        
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/search/site-search.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>

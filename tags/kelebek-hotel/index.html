@@ -1,0 +1,571 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>KELEBEK HOTEL | ju-hey.log</title>
+<meta name="description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+<meta name="robots" content="noindex, follow">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="KELEBEK HOTEL">
+<meta property="og:url" content="https://juheyday.github.io/tags/kelebek-hotel/">
+
+
+  <meta property="og:description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/tags/kelebek-hotel/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--tag" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  scheduleIdleHide();
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" class="archive-main-grid" role="main">
+  
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">KELEBEK HOTEL</h1>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="category-post-list" data-archive-post-list data-page-size="10">
+
+
+
+
+
+
+      
+      
+      
+        
+      
+        
+          
+          
+      
+
+
+
+
+
+
+<article class="category-post-item" data-category-post-item itemscope itemtype="https://schema.org/CreativeWork">
+  
+    <a class="category-post-item__image" href="/review/post-005/" tabindex="-1" aria-hidden="true">
+      <img src="https://ju-hey-console.vercel.app/api/images/post-005/550917f5-338d-4944-8ded-9fd273accc8c.jpg" alt="" loading="lazy">
+      
+
+  
+  
+  
+  
+  <span class="post-card-readtime"><i class="far fa-clock" aria-hidden="true"></i>4 min</span>
+
+
+    </a>
+  
+  <div class="category-post-item__body">
+    <h2 class="category-post-item__title" itemprop="headline">
+      <a href="/review/post-005/" rel="permalink">[호텔] 카파도키아 숙소 후기 - KELEBEK SPECIAL CAVE HOTEL
+</a>
+    </h2>
+    <p class="category-post-item__meta">
+      <time datetime="2026-07-10T00:00:00+09:00">2026.07.10</time>
+      <span aria-hidden="true">/</span>
+      <span>Review</span>
+    </p>
+    <p class="category-post-item__summary p-summary" itemprop="description">
+      <span class="category-post-item__excerpt">카파도키아 숙소, KELEBEK SPECIAL CAVE HOTEL 이용 후기.</span><span class="category-post-item__separator" aria-hidden="true"></span><span class="category-post-item__body-preview">이 글은 2026년 2월에 이용한 경험을 바탕으로 작성된 솔직한 후기입니다.     주헤이 가족은 지난 2월 튀르키예 여행 중 두 번째 지역으로 카파도키아에 다녀왔다.   아무래도 비수기로 꼽히는 계절이다보니 카파도키아에서 열기구를 못 탈 각오는 해야 했다.   대신에 주헤이가 카파도키아 여행 중 열기구만큼이나 기대한 것이 바로 동굴 호텔이었다.   켈레벡 스페셜 케이브 호텔에서 내려다본 야경.   주헤이와 짝꿍 DJ는 여행 예능 프로그램인 니돈내산 독박투어의 오랜 애청자다.   예전에 독박투어에서 카파도키아에 간 게 기억에 남아서 튀르키예 여행을 준비할 때 그 에피소드를 다시 챙겨보기도 했다.   독박투어 카파도키아 편을 볼 때 주헤이에게 제일 기억에 남은 것은 동굴 호텔들이 즐비한 야경이었다.   기대한 대로 비수기에도 괴레메에서 본 저녁 야경은 아름다웠고, 주헤이가 묵은 호텔도 기대만큼 이색적이고 아늑했다.   주헤이는 가족 3명이 다같이 쓸 수 있도록 패밀리룸이 있는 호텔 위주로 찾았는데 아무래도 패밀리룸 자체가 많지 않기도 하고, 후기도 적어서 발품 꽤나 팔고 고민을 많이 해야 했다.   그런 점에서 켈레벡 호텔 패밀리룸은 완벽했다!     Kelebek Hotel 가격대   주헤이는 2026년 2월 숙박 기준, 패밀리룸을 1박당 45만 원 정도로 예약했다. 괴레메 한복판에 주차장도 갖춘 5성급 호텔에서 조식이 포함되고 무료 취소 가능한 패밀리룸을 1인 1박에 15만원 꼴에 예약한 셈이니 합리적이라고 생각했다. (2026년 2월 기준)     Kelebek Hotel 시설   동굴 호텔들은 대체로 방 조명이 너무 어둡다는 평이 많아서 걱정했는데 켈레벡 호텔은 괜찮은 편이었다.   주헤이의 일행들이 모두 어두운 조명을 싫어하는데 다들 방 안에서 불편함 없이 잘 지냈다.   동굴 느낌도 너무 야생적이지 않고 적당하다. 벽이 진짜 돌벽인가 싶어서 살짝 두드려보기도 했는데 진짜 돌벽이었다:D   어메니티 퀄리티도 좋고, 목욕 문화가 있어 어메니티에 때밀이 도구가 있는 것도 재밌었다.   패밀리룸 내부. 현관문을 들어서면 복도겸 작은 거실이 있고, 그 왼쪽엔 더블룸, 정면엔 트윈룸이 있다.   패밀리룸은 거실이 작게 따로 있고 방이 2개 있어서 하나는 트윈룸, 하나는 더블룸으로 되어 있었다.   전부 정말 깨끗하고 관리가 잘 되어 있었다.   더블룸에는 TV와 옷장이 있고 트윈룸에는 욕실과 작은 장과 소파가 있다. 그리고 두 방 모두 화장대가 있다.   화장실 겸 욕실이 하나뿐이라서 인원이 4명 이상이면 약간의 불편은 있을 것 같다.   그리고 욕실이 그다지 크지 않다. (아마 영상도 찍어놨던 거 같은데 어디 있는지 기억이 안 난다..)   콘센트는 침대 근처에도 조금 있고 소파 부근이나 거실 등 다른 곳에도 군데군데 있어서 셋이 쓰기에 알맞았던 걸로 기억한다. (튀르키예 콘센트는 한국 제품을 꽂아 사용할 수 있다.)   실내 온도도 춥거나 덥지 않고 딱 괜찮았다. 더블룸(#1~#10)과 트윈룸 내부(#11~#14). 3박을 머무는 동안 하루는, 비가 많이 와서 DJ가 엄마와 주헤이를 위해 하맘 스파를 시켜줬다.   덕분에 큰맘 먹고 켈레벡 스파를 이용해봤는데 날씨 때문에 일찍 일정을 끝낸 게 아쉽지 않을 만큼 편안하고 개운한 휴식이 되었다.   스파를 받는 대욕장은 널찍하고 깨끗한데 예약 손님만 받으니 프라이빗해서 편안하게 이용할 수 있었다.   주헤이는 적당히 빡빡 문지르는 걸 좋아해서 이모님들 손힘이 주헤이에겐 쬐금 약한 편이었지만, 아프게 받는 걸 싫어하는 엄마는 적당한 세기로 받아서 시원하고 좋았다고 하셨다.   그치만 평소에 주헤이 가족은 웬만해서는 관광하느라 호텔에 잠잘 때만 들르기 때문에 호텔 스파는 한 번 경험해본 걸로 충분하다는 생각은 든다.   스파 시설 위치는 체크인할 때 안내 받는다.   스파는 방에서 리셉션에 전화를 걸어 미리 예약하면 되는데, 주헤이가 갔을 땐 마침 예약이 없어 바로 뒷타임에 받아주셨다.   체크인할 때 시설 안내 받으면서 스파 시설 위치도 안내받는다.   하맘 서비스 받았던 실내 사진은 안 찍었지만 아래 홈페이지에 나오는 대욕장 사진과 똑같이 생긴 곳이었다. KELEBEK SPECIAL CAVE HOTEL - Cave TURKISH BATH &amp; Spa   겨울이지만 수영장도 물을 채워 관리하고 있었다. 수영장은 예뻤는데 찬물이라서 구경만 했다..   수영장도 예쁘다.   켈레벡 호텔로 가는 길은 구글 지도 네비게이션을 찍고 가면 주차장쪽 입구로 안내된다.   켈레벡 호텔과 다른 여러 호텔이 미로같은 계단과 여러 골목들을 사이에 두고 맞닿아 있어서, 걸어서 다른 쪽 길로 들어가게 되면 길을 잃기 쉬워 보였다.   주차장쪽으로 네비를 따라가면 경사로를 올라가야 하긴 하지만 호텔 리셉션이 가까워서 짐 내리자마자 체크인하기가 편리하다.   우리가 갔을 땐 주차장이 널찍하고 자리도 넉넉했는데 성수기에는 어떨지 모르겠다.   성수기에는 괴레메 언덕에도 차가 많아서 주차난이 심하다고 들었다.   호텔 중심 갈래길(#1, #2)과 호텔 주차장(#3). 주차장에서 나가는 길(#4).   아무래도 켈레벡 호텔 근방은 지대가 높아서 큰 짐을 들고 걸어 오르기가 쉽지는 않다.   그래도 켈레벡 호텔은 괴레메 언덕의 적당한 중턱에 위치해서 중심가로 걸어 갔다오기도 쉬운 편이다.     Kelebek Hotel 조식   시설만큼이나 조식 퀄리티는 중요하다. 그리고 켈레벡 호텔 조식은 맛도 훌륭하고 실내도 뷰도 너무 예쁘다.   하페나(Happena) 레스토랑에서 매일 아침 조식이 열리는데 메뉴 가짓수가 많고 다 싱싱해서 입맛대로 골라 먹기 좋다.   안내를 받아 식탁에 앉으면 ‘HOT BREAKFAST’라고 되어 있는 메뉴판이 있어서, 그 중 1인당 하나씩 골라서 주문하면 갓 나온 따뜻한 요리를 준다.   조식당 앞에 있는 소파 좌석과 실내에 진열된 음식들. 날이 좋았다면 밖에 앉았을지도. 메뉴가 다양하고 모두 싱싱하다.     Kelebek Hotel 레스토랑   체크인 안내를 받을 때 켈레벡 호텔과 근접한 식당이 조식당을 포함해서 두세 군데 있다고 알려주었다.   주헤이네는 그 중 술탄 케이브 호텔쪽에 있는 seten 레스토랑에서 첫날 저녁식사를 했다.   항아리 케밥도 있고, 분위기가 우아하고, 서비스나 퍼포먼스도 좋았다.   뷰도 좋고 분위기가 좋으니 비수기인데도 커플 손님이 많았다.   주헤이는 향이 강한 음식을 좋아해서 대체로 맛있었는데 아무래도 튀르키예 전통요리를 많이 주문하다 보니 일행들에게는 호불호가 좀 있었다.   그렇지만 평소에 보기 힘든 식사라 다들 흥미롭게 맛봤다.   세텐(SETEN) 레스토랑 내부 풍경과 식사.     KELEBEK HOTEL, 그 밖의 여담   주헤이네는 여행 출발하기 전에 켈레벡 호텔에 열기구 업체에 대해 문의해서 3개 업체를 추천 받았고, 그 중에서 투르콰즈(TURQUAZ)라는 열기구 업체 픽업을 받아서 사무실까지 갔다가 날씨가 안 풀려서 결국 이륙이 취소되어 호텔로 돌아왔다.   잠깐의 경험이었지만 업체 서비스와 응대가 좋아서 다음에 가게 되면 또 이용할 것 같다. 그리고 켈레벡 호텔에 대한 신뢰도 덩달아 올라갔다.   켈레벡 호텔 주변 골목에는 아기자기한 가게나 기념품샵이 많아서 저녁먹고 산책 겸 구경하는 재미도 있었다.   켈레벡(KELEBEK) 호텔 근처 골목길에 있는 가게들. 걷다 보면 아기자기한 가게들이 여럿 보인다.   괴레메에 위치해 있는 호텔이면 대부분 카파도키아 대표 관광지들을 오가기 편하다.   그 중에서도 켈레벡 스페셜 케이브 호텔은 가격대가 있는 편이지만 패밀리룸과 주차장이 있고 위치/서비스/조식 등 전반적인 퀄리티가 좋아서 주헤이네는 아주 만족하며 3박 일정을 보냈다.   다음에는 날이 따뜻할 때 가서 열기구도 보고 싶다🌟</span>
+    </p>
+  </div>
+</article>
+</div>
+
+
+
+
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <div class="right-rail-image rr-focus-center-right" role="img" aria-label="Right sidebar image" style="background-image: url('/assets/images/site/sidebar-right.jpg?v=1776269532');"></div>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits" style="margin-top:0.5rem;font-size:0.625rem;color:#9ca3af;letter-spacing:0.02em;">
+  Font: <span style="font-family:'JejuMyeongjo',serif">제주명조체</span> (제주특별자치도), <span style="font-family:'MapoGoldenPier',cursive">마포금빛나루체</span> (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+<!-- end custom footer snippets -->
+
+        
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/search/site-search.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>

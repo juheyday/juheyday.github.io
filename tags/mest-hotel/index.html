@@ -1,0 +1,571 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>mest hotel | ju-hey.log</title>
+<meta name="description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+<meta name="robots" content="noindex, follow">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="mest hotel">
+<meta property="og:url" content="https://juheyday.github.io/tags/mest-hotel/">
+
+
+  <meta property="og:description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/tags/mest-hotel/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--tag" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  scheduleIdleHide();
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" class="archive-main-grid" role="main">
+  
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">mest hotel</h1>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="category-post-list" data-archive-post-list data-page-size="10">
+
+
+
+
+
+
+      
+      
+      
+        
+      
+        
+          
+          
+      
+
+
+
+
+
+
+<article class="category-post-item" data-category-post-item itemscope itemtype="https://schema.org/CreativeWork">
+  
+    <a class="category-post-item__image" href="/review/post-004/" tabindex="-1" aria-hidden="true">
+      <img src="https://ju-hey-console.vercel.app/api/images/post-004/14cfab13-e1a8-4058-9a11-8fed595dfa72.jpg" alt="" loading="lazy">
+      
+
+  
+  
+  
+  
+  <span class="post-card-readtime"><i class="far fa-clock" aria-hidden="true"></i>3 min</span>
+
+
+    </a>
+  
+  <div class="category-post-item__body">
+    <h2 class="category-post-item__title" itemprop="headline">
+      <a href="/review/post-004/" rel="permalink">[호텔] 이스탄불 숙소 이용 후기 - MEST HOTEL / ESS HOTEL
+</a>
+    </h2>
+    <p class="category-post-item__meta">
+      <time datetime="2026-05-30T00:00:00+09:00">2026.05.30</time>
+      <span aria-hidden="true">/</span>
+      <span>Review</span>
+    </p>
+    <p class="category-post-item__summary p-summary" itemprop="description">
+      <span class="category-post-item__excerpt">이스탄불의 구시가지/신시가지 호텔 이용 후기</span><span class="category-post-item__separator" aria-hidden="true"></span><span class="category-post-item__body-preview">이 글은 2026년 2월에 이용한 경험을 바탕으로 작성된 후기입니다.   지난 겨울, 튀르키예 이스탄불 여행 때 주헤이네 가족 성인 3명이 묵었던 두 호텔을 소개하려고 한다.   참고로, 주헤이는 아직 블로그 초짜라 커미션같은 걸 받아볼 구석이 없다..😮 언젠가 생길 때가 올까? 암튼 내돈내산이라는 말.   Mest 호텔과 Ess 호텔에 대해 자세히 얘기하기 전에 결론부터 말하면 우리는 아주 만족했다.   2월이 비수기이다 보니 괜찮은 가격에 묵기도 했지만 두 호텔 모두 비슷한 가격대의 호텔 중에선 가성비가 좋은 편이었다.       이스탄불의 신시가지와 구시가지   갈라타 다리와 갈라타 탑.   이스탄불에서 단기 여행객들이 주로 묵는 곳은 갈라타 다리를 사이에 두고 신시가지와 구시가지로 나뉜다.   신시가지는 구시가지에 비해 비교적 최근에 지어진 호텔이 많고 공항 접근성도 더 좋아서 숙박비가 좀 더 비싼 편이다.   반면에 구시가지로 가면 유명한 모스크들과 시장들이 가깝고 대중교통이 잘 되어 있어서 신시가지에 가기도 쉽다.   여러 가지 장단점이 있지만 여행자 입장에서는 동네마다 다르게 느낄 수 있는 특유의 분위기도 중요하다.   주헤이는 그런 분위기를 다 느껴보고 싶었기 때문에 구시가지와 신시가지를 모두 한 번씩 묵어보기로 했다.         구시가지 숙소, Mest 호텔     갈라타 다리 바로 아래, 시르케치 지역에 이집션 바자르(=므스르 차르슈)라는 시장과 예니모스크가 있다.   그리고 시장과 예니모스크 옆에 켜켜이 붙은 골목들 사이에 위치한 Mest 호텔은 저녁에 가면 입구를 알아보기가 쉽지 않다.   이집션 바자르의 주변도 전부 시장인데 저녁엔 그 일대가 온통 사람들로 북적이기 때문이다.   시장 안에 있다 보니 택시가 호텔 앞까지 못 들어가기 때문에 택시를 타려면 5분 정도 걸어 나가야 한다.   시장 사이에 있는 Mest 호텔. 2층쯤에 보이는 간판을 찾으면 된다.   그래서 솔직히 처음에 찾아가는 게 쉽진 않았다.   공항에서 시르케치까지 바로 가는 공항버스(하바이스트)도 없어서 대중교통으로 가려면 1회 이상 갈아타야 한다. (2026년 2월 기준)   우리는 공항버스를 타고 악사라이에 내린 다음 근처로 걸어가서 버스를 갈아탔다.   그런 다음에 버스에서 내려서 인파를 뚫고 캐리어와 함께 10분을 걷는 건 또 다른 도전이었다.   그렇지만 일단 체크인하면 마음에 드는 점이 정말 많았다.   Mest 호텔 복도 경관.   체크인 할 때부터 친절한 응대에 기분이 좋았고 방도 깨끗했다.   우리가 3박4일간 묵은 방은 로프트 패밀리룸이라고 하는 복층방이었는데 크기가 큰 건 아니지만 캐리어 2개를 펼치기에 적당했다.   복층방 내부   문 열면 안쪽에 더블 침대가 하나 있고 사다리 타고 올라간 위층에 매트리스가 하나 더 있었다.   방에 창문도 있고 온수가 잘 나오고 방 온도도 딱 좋았다.   Mest 호텔 조식당. 식당 테라스에서 보이는 예니모스크.   예니모스크가 바로 보이는 조식당 뷰가 끝내주고 조식도 가짓수가 많고 맛있다.   근처에 먹을 곳이 많고 특히 고등어 케밥 가게들과 하피즈 무스타파가 있어 좋았다.   체크아웃하고 공항으로 갈 땐 붐비지 않는 시간대에 큰 길로 나가서 비탁시(BiTaksi) 어플로 택시를 불러 편하게 이동했다.   Mest 호텔 로프트 패밀리룸은 2026년 2월 숙박 기준으로 아고다에서 1박에 약 30만원 정도로 예약했다.   결론적으로 Mest 호텔은 가격대가 싼 편은 아니지만 그만큼 위치/시설/서비스가 좋아서 합리적이라고 느꼈다.         신시가지 숙소, Ess 호텔     보통 신시가지에서의 관광 동선은 이스티클랄 거리(İstiklal Caddesi)를 중심으로 갈라타 탑에서 탁심 광장까지 걸쳐 있다.   그리고 탁심 광장에서 갈라타 탑으로 가는 길이 대체로 내리막길이기 때문에 보통은 탁심 광장을 시작점으로 잡는다.   게다가 공항(IST)에서 탁심 광장까지 한 번에 오가는 공항버스가 있어서 탁심 광장 근처 호텔들이 특히 더 비싼 편이다.   그 중에서 Ess 호텔은 가성비가 정말 좋은 호텔이었다.   주헤이는 2026년 2월 숙박 기준 스탠다드 트리플룸을 아고다에서 1박에 약 14만 원의 가격으로 예약했다.   비수기인데도, 당시에 주헤이가 찾아봤던 그 근방의 후기 좋은 3성급 호텔들은 모두 1박에 25만 원 이상이었다.   너무 싼 호텔들은 대체로 후기가 안 좋은데, Ess 호텔은 가격에 비해 후기가 너무 좋아서 이런 데를 왜 이제야 발견했나 싶었다. (Ess 호텔 찾아준 DJ 칭찬해~)   Ess 호텔 외부 전경. 호텔이 위치한 골목 풍경.   공항버스 정류장이 3분 거리에 있고 트리플룸이 있는데다가 온수도 잘 나오고 깨끗하고 어메니티도 슬리퍼, 샴푸 등 있을 건 다 있었다.   호텔이 위치한 골목도 넓고 깨끗해서 다니기에 좋았다.   엘레베이터 타고 지하로 내려가면 나오는 에스호텔 조식당. 조식도 웬만한 건 있다.   지금 보니 깜빡하고 방 내부 사진은 안 찍었는데 조식당 사진은 엄청 찍어놨다.. …나아지겠지.   Ess 호텔은 방음, 조식, 어메니티의 퀄리티에는 큰 기대를 하지 않는 편이 좋을 것 같지만 가격/청결/위치가 단점을 상쇄했다.       만약 다음에 같은 위치로 여행가게 된다면 두 호텔 모두 재방문 의사가 있다⭐️   그렇지만 꼭 이 호텔들이 있는 위치가 아니더라도 갈라타 다리에서 너무 멀지 않고 대중교통 정류장만 가까우면 주요 관광지에 가기 어렵지 않다.   주헤이네는 원래 아야 소피아 근처에 있는 숙소를 예약해뒀다가, 일정상 신시가지에 더 많이 가게 되어서 막판에 숙소를 변경했었다.   만약 동선이 맞으면 술탄 아흐메트쪽에도 가성비 괜찮은 숙소가 많으니 고려해보면 좋을 것이다.   술탄 아흐메트 공원에서 보이는 아야 소피아  </span>
+    </p>
+  </div>
+</article>
+</div>
+
+
+
+
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <div class="right-rail-image rr-focus-center-right" role="img" aria-label="Right sidebar image" style="background-image: url('/assets/images/site/sidebar-right.jpg?v=1776269532');"></div>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits" style="margin-top:0.5rem;font-size:0.625rem;color:#9ca3af;letter-spacing:0.02em;">
+  Font: <span style="font-family:'JejuMyeongjo',serif">제주명조체</span> (제주특별자치도), <span style="font-family:'MapoGoldenPier',cursive">마포금빛나루체</span> (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+<!-- end custom footer snippets -->
+
+        
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/search/site-search.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>

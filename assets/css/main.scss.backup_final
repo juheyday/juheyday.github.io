@@ -1,0 +1,1616 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>ju-hey.log</title>
+<meta name="description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="ju-hey.log">
+<meta property="og:url" content="https://juheyday.github.io/assets/css/main.scss.backup_final">
+
+
+  <meta property="og:description" content="여행 · 스토리와 플레이 · 가벼운 일 이야기       Travel · Picks · Casual Notes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/assets/css/main.scss.backup_final">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  scheduleIdleHide();
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+
+
+
+
+<div id="main" class="single-main-grid" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://juheyday.github.io/">
+        <img src="/assets/images/author-avatar.jpg?v=1779352633" alt="JU-HEY(주헤이)" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://juheyday.github.io/" itemprop="url">JU-HEY(주헤이)</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>여행, 스토리와 플레이, 그리고 사소한 기록들을 담는 공간입니다.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/juheyday" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+  </div>
+</div>
+
+  
+  
+    
+
+
+
+  
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header class="page__header">
+          
+          <div class="page__header-content">
+            
+
+            <div class="page__header-meta">
+              
+
+  
+
+  
+
+
+              
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </header>
+      
+
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+        
+        @charset "utf-8";
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+/* ===================================================================
+   사진첩 스타일 그리드 카드
+   =================================================================== */
+
+.grid__item {
+  .archive__item {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .archive__item-teaser {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: mix(#fff, $muted-text-color, 90%);
+    max-height: none !important;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .archive__item-teaser-placeholder {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f3f3f3 0%, #e7e7e7 100%);
+  }
+
+  .archive__item-title {
+    padding: 0.6rem 0.8rem 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .page__meta {
+    padding: 0 0.8rem 0.6rem;
+  }
+
+  .archive__item-excerpt {
+    padding: 0 0.8rem 0.6rem;
+  }
+}
+
+/* 게시물 헤더 메타 재배치 */
+.page__header {
+  margin-bottom: 1.5rem;
+
+  .page__title-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .page__title {
+    margin-bottom: 0;
+  }
+
+  .page__title-readtime {
+    font-size: $type-size-6;
+    color: $muted-text-color;
+    white-space: nowrap;
+    padding-bottom: 0.15rem;
+  }
+
+  .page__header-meta {
+    margin-top: 1rem;
+
+    .page__taxonomy,
+    .page__date {
+      margin: 0.2rem 0;
+      font-size: $type-size-6;
+    }
+  }
+}
+
+/* 게시물 본문 글씨 크기 */
+.page__content {
+  font-size: 0.75rem;
+
+  p, li, dl {
+    font-size: 0.75rem;
+  }
+}
+
+/* 태그/카테고리 버튼 크기 축소 (공통 클래스) */
+.page__taxonomy .page__taxonomy-item {
+  font-size: 0.68rem;
+  padding: 2px 6px;
+}
+
+/* 이어서 둘러보기 — 본문 float과 겹치지 않도록 */
+.page__related {
+  clear: both;
+}
+
+/* ===================================================================
+   Unified 3-Column Shell (single + home + category)
+   - Wide (≥$large): 1 : 3 : 1 + fixed right rail
+   - Mid ($medium–$large-1): 1 : 3 only, right rail hidden, 프로필 세로 스택
+   - Narrow (<$medium): 사이드바 → 본문 순 세로 스택, 오른쪽 레일 숨김
+
+   <$large 에서 MM 테마는 프로필을 table + Follow 토글로 쓴다. 이 셸의 사이드바만
+   넓은 화면과 동일한 프로필(이미지·타이포·링크 목록)을 유지하고, 배열만 세로로 바꾼다.
+   =================================================================== */
+
+@mixin author-in-shell-sidebar-mm-large-behavior {
+  .author__avatar {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    vertical-align: unset !important;
+
+    img {
+      width: auto !important;
+      max-width: 110px !important;
+      height: auto !important;
+      padding: 5px;
+      border: 1px solid $border-color;
+      border-radius: 50%;
+    }
+  }
+
+  .author__content {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding-inline: 0 !important;
+    vertical-align: unset !important;
+    line-height: 1;
+  }
+
+  .author__name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .author__bio {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .author__urls-wrapper {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    vertical-align: unset !important;
+    cursor: default;
+    position: relative !important;
+
+    button {
+      display: none !important;
+    }
+  }
+
+  .author__urls {
+    display: block !important;
+    position: relative !important;
+    inset-inline: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    &::before,
+    &::after {
+      display: none !important;
+    }
+  }
+}
+
+@mixin author-in-shell-sidebar-stack-h-card {
+  .h-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.single-main-grid,
+.archive-main-grid {
+  --shell-pad: 0.5rem;
+  --panel-pad: 1rem;
+  --right-rail-width: calc((100vw - (2 * var(--shell-pad))) / 5);
+  --left-center-width: calc(100vw - (2 * var(--shell-pad)) - var(--right-rail-width));
+  max-width: 100% !important;
+
+  > .sidebar,
+  > .page,
+  > .archive,
+  > .page__related,
+  > .page__right-visual {
+    float: none;
+    margin: 0;
+    min-width: 0;
+  }
+
+  > .page__right-visual {
+    display: none !important;
+  }
+
+  > .sidebar {
+    @media (max-width: #{$large - 1px}) {
+      @include author-in-shell-sidebar-mm-large-behavior;
+      @include author-in-shell-sidebar-stack-h-card;
+    }
+  }
+
+  /* ── 좁은 화면: 왼쪽(프로필) → 가운데(본문) 세로, 오른쪽 레일 없음 ── */
+  @media (max-width: #{$medium - 1px}) {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    padding-inline: var(--shell-pad);
+    gap: 0;
+
+    > .sidebar {
+      order: 1;
+      width: 100% !important;
+      max-width: none !important;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: var(--panel-pad);
+      position: static !important;
+      max-height: none !important;
+      text-align: center;
+
+      > * {
+        width: 100%;
+        max-width: min(360px, 100%);
+      }
+
+      .h-card {
+        align-items: center;
+      }
+    }
+
+    > .page,
+    > .archive {
+      order: 2;
+      width: 100% !important;
+      padding: var(--panel-pad) !important;
+    }
+
+    > .page__related {
+      order: 3;
+      width: 100% !important;
+      padding-inline: var(--panel-pad);
+    }
+
+    > .page__right-visual {
+      display: none !important;
+    }
+
+    > .page .page__inner-wrap {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /* ── 태블릿: 1+3 열만, 오른쪽 숨김, 좌측 프로필 세로 ── */
+  @include breakpoint($medium) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    column-gap: 1rem;
+    align-items: start;
+    padding-inline: var(--shell-pad);
+
+    > .sidebar,
+    > .page,
+    > .archive,
+    > .page__related,
+    > .page__right-visual {
+      width: auto;
+    }
+
+    > .sidebar {
+      grid-column: 1;
+      grid-row: 1;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: var(--panel-pad);
+
+      > * {
+        width: 100%;
+        max-width: min(260px, 100%);
+      }
+    }
+
+    > .page,
+    > .archive {
+      grid-column: 2;
+      padding: var(--panel-pad) !important;
+      width: 100% !important;
+    }
+
+    > .page .page__inner-wrap {
+      float: none;
+      width: 100%;
+    }
+
+    > .page__related {
+      grid-column: 2;
+      min-width: 0;
+    }
+
+    > .page__right-visual {
+      display: none !important;
+      position: static !important;
+      inset: auto !important;
+      width: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+
+    /* ── 넓은 화면: 1:3:1 + 고정 오른쪽 레일 ── */
+    @include breakpoint($large) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr);
+
+      > .sidebar {
+        > * {
+          max-width: 220px;
+        }
+      }
+
+      > .page__right-visual {
+        display: block !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        grid-column: 3;
+        grid-row: 1 / -1;
+        position: sticky; top: 0; height: 100vh; width: 100%; max-width: 420px; min-width: 180px; overflow: hidden;
+        padding: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        .right-rail-image {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          z-index: 1;
+        }
+
+        .right-rail-image.rr-focus-left { background-position: left center; }
+        .right-rail-image.rr-focus-center { background-position: center center; }
+        .right-rail-image.rr-focus-right { background-position: right center; }
+
+        .right-rail-credit {
+          position: absolute;
+          inset-inline: 0;
+          bottom: 0;
+          margin: 0;
+          padding: 12px 12px 10px;
+          font-size: 11px;
+          line-height: 1.35;
+          color: #e2e8f0;
+          background: linear-gradient(to top, rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0));
+          z-index: 2;
+
+          a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+          }
+        }
+
+        .right-rail-slot {
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+        }
+
+        .right-rail-slot iframe,
+        .right-rail-slot ins,
+        .right-rail-slot > div {
+          max-width: 100%;
+        }
+
+        &.is-empty {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+/* 아카이브 계열 공통 간격 */
+.archive > #page-title {
+  margin: 0 0 1.2rem;
+}
+
+.archive > .grid__wrapper {
+  margin-top: 0.35rem;
+}
+
+/* 헤더/푸터 높이 공통 0.7배 조정 */
+.masthead__inner-wrap {
+  padding-block: 0.7em;
+}
+
+.site-logo img {
+  max-height: 1.4rem;
+}
+
+.page__footer {
+  margin-top: 2.1em;
+}
+
+.page__footer footer {
+  margin-top: 1.4em;
+  padding-bottom: 1.4em;
+}
+
+.page__footer-follow li {
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+}
+
+/* masthead + footer: 좁은 구간은 본문 전체 너비, ≥$large에서만 고정 오른쪽 레일에 맞춘 4/5 */
+@include breakpoint($medium) {
+  .layout--single .masthead__inner-wrap,
+  .layout--archive .masthead__inner-wrap,
+  .layout--category .masthead__inner-wrap,
+  .layout--home .masthead__inner-wrap,
+  .layout--single #footer footer,
+  .layout--archive #footer footer,
+  .layout--category #footer footer,
+  .layout--home #footer footer {
+    max-width: calc(100vw - 1rem);
+    margin-inline: 0.5rem;
+  }
+
+  @include breakpoint($large) {
+    .layout--single .masthead__inner-wrap,
+    .layout--archive .masthead__inner-wrap,
+    .layout--category .masthead__inner-wrap,
+    .layout--home .masthead__inner-wrap,
+    .layout--single #footer footer,
+    .layout--archive #footer footer,
+    .layout--category #footer footer,
+    .layout--home #footer footer {
+      max-width: calc((100vw - 1rem) * 4 / 5);
+      margin-inline-start: 0.5rem;
+      margin-inline-end: auto;
+    }
+  }
+}
+
+
+/* Interaction restrictions: disable selection outside masthead */
+.no-select, .no-select * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.masthead,
+.masthead * {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* FORCE LAYOUT OVERRIDE TO STOP FULL-SCREEN BLEED */
+.single-main-grid > .page__right-visual,
+.archive-main-grid > .page__right-visual {
+  display: block;
+  grid-column: 3;
+  width: 100%;
+  max-width: 320px;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1023px) {
+  .single-main-grid > .page__right-visual,
+  .archive-main-grid > .page__right-visual {
+    display: none !important;
+  }
+}
+
+.right-rail-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  z-index: -1;
+}
+
+/* ================== THE ULTIMATE FIX V22 (Archive Cards Layout & Ellipsis) ================== */
+html { font-size: 17.5px !important; }
+
+/* Masthead */
+.masthead {
+  position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important;
+  z-index: 9900 !important; height: 65px !important;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  background-color: rgba(255, 255, 255, 0.98) !important; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.masthead.is-hidden { transform: translateY(-100%) !important; }
+.masthead__inner-wrap {
+  padding: 0 1.5rem !important; min-height: 65px !important;
+  display: flex !important; align-items: center !important;
+  font-size: 1.1rem !important;
+}
+nav.greedy-nav { height: 100% !important; display: flex !important; align-items: center !important; }
+.site-title { padding-top: 0 !important; padding-bottom: 0 !important; line-height: 65px !important; font-size: 1.25rem !important; }
+body { padding-top: 65px !important; }
+
+/* ------------------------------------------------------------------------- */
+/* POST HEADER BLEED FIX */
+#main { margin-top: 0 !important; padding-top: 0 !important; margin-bottom: 2rem !important; }
+.page { padding-top: 0 !important; margin-top: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+.page__inner-wrap { padding-top: 0 !important; margin-top: 0 !important; padding-bottom: 0 !important; margin-bottom: 2rem !important; }
+
+.page__header {
+  position: relative !important;
+  background-color: #f8fafc !important;
+  padding: 3rem 2rem 2.5rem 2rem !important;
+  border-radius: 0 0 12px 12px !important; 
+  margin-bottom: 4rem !important;
+  overflow: hidden !important;
+  min-height: 280px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.page__title-row { width: 100% !important; }
+.page__title {
+  margin-bottom: 1rem !important; font-weight: 400 !important;
+  font-size: 2.2rem !important; color: #111827 !important;
+  position: relative !important; z-index: 2 !important;
+}
+.page__content, .page__comments, .page__related { padding-left: 2rem !important; padding-right: 2rem !important; }
+@media (max-width: 768px) {
+  .page__content, .page__comments, .page__related { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+
+.page__title-readtime { position: absolute !important; top: 1.5rem !important; right: 2rem !important; font-size: 13px !important; color: #6b7280 !important; }
+
+.page__header-meta, .page__meta, .page__date, .page__taxonomy {
+  display: flex !important; align-items: center !important; flex-wrap: wrap !important;
+  font-size: 0.9rem !important; color: #6b7280 !important;
+  margin: 0.15rem 0 !important; padding: 0 !important;
+  position: relative !important; z-index: 2 !important;
+}
+.page__header-meta strong, .page__meta strong, .page__date strong, .page__taxonomy strong { font-size: 0.9rem !important; font-weight: 400 !important; margin-right: 0.4rem !important; display: flex !important; align-items: center !important; }
+.page__taxonomy-item, .page__meta a, .page__header-meta a, .page__date time { font-size: 0.9rem !important; font-weight: 400 !important; color: #4b5563 !important; display: inline-flex !important; align-items: center !important; margin-right: 0.8rem !important; background: transparent !important; border: none !important; padding: 0 !important; text-decoration: underline !important; text-underline-offset: 4px !important; text-decoration-color: #d1d5db !important; transition: all 0.2s !important; }
+.page__taxonomy-item:hover, .page__meta a:hover, .page__header-meta a:hover { color: #111827 !important; text-decoration-color: #111827 !important; }
+.page__header-meta i, .page__meta i, .page__date i, .page__taxonomy i { font-size: 0.9rem !important; margin-right: 0.3rem !important; color: #9ca3af !important; display: flex !important; align-items: center !important; }
+
+/* ------------------------------------------------------------------------- */
+/* ARCHIVE CARDS (FLUID GRID FIX & TITLE CLAMP) */
+.entries-grid, .grid__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)) !important;
+  gap: 2rem 1.5rem !important; /* 약간의 세로 여백 추가 */
+}
+@media (max-width: 600px) {
+  .entries-grid, .grid__wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+.entries-grid .grid__item {
+  width: 100% !important; margin: 0 !important; float: none !important; clear: none !important;
+  min-width: 0 !important; /* 그리드 내부 오버플로우 방지 */
+}
+
+/* Title Redesign & Ellipsis Constraint */
+.archive__item-title {
+  font-size: 1.1rem !important; 
+  font-weight: 400 !important; 
+  line-height: 1.4 !important; 
+  margin-bottom: 0.5rem !important;
+  margin-top: 0 !important;
+  /* 두 줄 이상 넘어가면 말줄임표(...) 처리 */
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-break: break-word !important;
+}
+.archive__item-title a, .archive__item-title a:visited {
+  color: #6b7280 !important; 
+  text-decoration: none !important; 
+  font-weight: 400 !important;
+}
+.archive__item-title a:hover {
+  color: #374151 !important; 
+  text-decoration: none !important;
+}
+
+/* Read Time Alignment & Size Fix */
+.archive__item .page__meta {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 0.28rem !important;
+  padding-inline: 0.9rem !important;
+  box-sizing: border-box !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-bottom: 0.55rem !important;
+  white-space: nowrap !important;
+}
+.archive__item .page__meta, .archive__item .page__meta *, .archive__item .read-time {
+  font-size: 0.75rem !important;
+  color: #9ca3af !important;
+  line-height: 1.2 !important;
+}
+.archive__item .page__meta i {
+  margin-right: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
+}
+
+/* 본문 요약(Excerpt)이 있을 경우 글자수 제한 */
+.archive__item-excerpt {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  font-size: 0.85rem !important;
+  line-height: 1.5 !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Main Content */
+.page__content { font-size: 0.9rem !important; line-height: 1.8 !important; }
+.page__content p, .page__content li, .page__content table { font-size: 0.9rem !important; }
+
+/* Left Profile Adjustments & Sticky Fix */
+.author__name { font-size: 1.3rem !important; font-weight: 600 !important; }
+.author__bio { font-size: 0.95rem !important; }
+.author__urls-wrapper li, .author__urls-wrapper a { font-size: 0.9rem !important; }
+.sidebar { margin-bottom: 2rem !important; }
+.sidebar.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: calc(65px + 2rem) !important;
+}
+
+/* Right Rail Extend to Top Header Edge (Top 0) */
+@media (min-width: 1024px) {
+  .single-main-grid > .page__right-visual, .archive-main-grid > .page__right-visual {
+    display: block !important; position: -webkit-sticky !important; position: sticky !important;
+    top: 0 !important; width: 100% !important; height: calc(100vh - 40px) !important;
+    grid-column: 3; padding: 0 !important; margin: 0 !important; z-index: 10001 !important;
+    overflow: hidden !important; box-sizing: border-box !important;
+  }
+  .right-rail-image { position: relative !important; display: block !important; width: 100% !important; height: 100% !important; background-size: cover !important; background-repeat: no-repeat !important; }
+  .right-rail-image.rr-focus-left { background-position: left center !important; }
+  .right-rail-image.rr-focus-center { background-position: center center !important; }
+  .right-rail-image.rr-focus-right { background-position: right center !important; }
+  .right-rail-credit { position: absolute !important; bottom: 0 !important; left: 0 !important; right: 0 !important; z-index: 10 !important; }
+}
+@media (max-width: 1023px) { .page__right-visual { display: none !important; } }
+
+/* Taxonomy baseline alignment fix (match Updated date row) */
+.page__taxonomy {
+  align-items: baseline !important;
+}
+.page__taxonomy > strong {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  line-height: 1.25 !important;
+}
+.page__taxonomy > span[itemprop='keywords'] {
+  display: inline !important;
+  line-height: 1.25 !important;
+}
+.page__taxonomy-item,
+.page__taxonomy .sep {
+  display: inline !important;
+  vertical-align: baseline !important;
+  line-height: 1.25 !important;
+}
+
+        
+      </section>
+
+      
+
+      
+
+
+
+<div class="post-actions-bar">
+  <div class="post-actions-bar__primary">
+    
+      
+      
+      
+      <button class="post-action-btn post-like-btn" data-like-post="assets/css/main.scss.backup_final" aria-label="Like this post">
+        <svg class="like-heart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <span class="like-count"></span>
+      </button>
+    
+
+    
+  </div>
+
+  <button class="post-action-btn post-top-btn" type="button" aria-label="맨 위로 이동" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5"/><path d="m5 12 7-7 7 7"/>
+    </svg>
+    <span>맨 위</span>
+  </button>
+
+  
+</div>
+
+<style>
+  /* Post footer actions: related controls on the left, navigation on the right. */
+  .post-actions-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    clear: both;
+    padding-top: 1.5em;
+  }
+
+  .post-actions-bar__primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+  }
+
+  .post-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 0.72rem;
+    border: 1px solid #d8dde3;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.84);
+    color: #7a8795;
+    font-family: 'Jeju Myeongjo', 'JejuMyeongjo', Georgia, serif;
+    font-size: 0.68rem;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    user-select: none;
+  }
+
+  .post-action-btn:hover {
+    border-color: #c5b9ae;
+    background: #faf8f5;
+    color: #66594e;
+  }
+
+  .post-like-btn {
+    gap: 0.3rem;
+    min-width: 34px;
+    padding-inline: 0.55rem;
+  }
+  .post-like-btn.has-count { padding-inline: 0.6rem; }
+  .post-like-btn:hover { border-color: #d8aea7; color: #b96860; }
+  .post-like-btn.liked { border-color: #d8aea7; color: #b65d56; background: #fff9f8; }
+  .post-like-btn .like-heart { width: 16px; height: 16px; transition: transform 0.2s; }
+  .post-like-btn .like-count { display: inline-block; line-height: 1; font-variant-numeric: tabular-nums; }
+  .post-like-btn:active .like-heart { transform: scale(1.3); }
+  .like-count:empty { display: none; }
+
+  .post-share-btn {
+    width: 34px;
+    padding: 0;
+  }
+
+  .post-top-btn {
+    gap: 0.32rem;
+    padding-inline: 0.62rem 0.72rem;
+  }
+  .post-top-btn svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  /* ── Share modal overlay ── */
+  .share-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+  }
+  .share-modal-overlay.is-visible { display: flex; }
+
+  /* ── Share modal box ── */
+  .share-modal {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem 1.75rem 1.25rem;
+    width: 320px;
+    max-width: 90vw;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    animation: share-modal-in 0.2s ease-out;
+  }
+  @keyframes share-modal-in {
+    from { opacity: 0; transform: scale(0.95) translateY(8px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .share-modal__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #94a3b8;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.25rem;
+  }
+  .share-modal__close:hover { color: #334155; }
+  .share-modal__title {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .share-modal__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .share-modal__link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #334155;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .share-modal__link:hover { background: #f1f5f9; border-color: #cbd5e1; }
+  .share-modal__link i,
+  .share-modal__link svg { flex-shrink: 0; font-size: 1.1rem; }
+  .share-modal__link--x:hover { color: #000; }
+  .share-modal__link--facebook:hover { color: #1877f2; }
+  .share-modal__link--linkedin:hover { color: #0a66c2; }
+  .share-modal__link--bluesky:hover { color: #0085ff; }
+  .share-modal__link--copy { font-family: inherit; }
+  .share-modal__link--copy:hover { color: #16a34a; }
+</style>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <div class="right-rail-image rr-focus-center-right" role="img" aria-label="Right sidebar image" style="background-image: url('/assets/images/site/sidebar-right.jpg?v=1776269532');"></div>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+
+  
+  
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.page__header');
+  const title = header ? header.querySelector('.page__title') : null;
+  if (!header || !title) return;
+
+  const syncHeaderHeight = () => {
+    header.style.setProperty('--page-header-extra-height', '0px');
+
+    const computed = window.getComputedStyle(title);
+    const lineHeight = parseFloat(computed.lineHeight);
+    if (!lineHeight || Number.isNaN(lineHeight)) return;
+
+    const titleHeight = title.getBoundingClientRect().height;
+    const lines = Math.max(1, Math.round(titleHeight / lineHeight));
+    const extraLines = Math.max(0, lines - 1);
+    const extraHeight = extraLines * lineHeight;
+
+    header.style.setProperty('--page-header-extra-height', `${extraHeight}px`);
+  };
+
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight, { passive: true });
+
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(syncHeaderHeight);
+    observer.observe(title);
+  }
+});
+</script>
+
+
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits" style="margin-top:0.5rem;font-size:0.625rem;color:#9ca3af;letter-spacing:0.02em;">
+  Font: <span style="font-family:'JejuMyeongjo',serif">제주명조체</span> (제주특별자치도), <span style="font-family:'MapoGoldenPier',cursive">마포금빛나루체</span> (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+<!-- end custom footer snippets -->
+
+        
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/search/site-search.js"></script>
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>
