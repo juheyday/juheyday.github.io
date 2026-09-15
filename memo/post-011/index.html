@@ -1,0 +1,2695 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="ko-KR" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>[GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지 | ju-hey.log</title>
+<meta name="description" content="사이트맵 제출을 포기하고 블로그 안정화 작업만 계속 해오고 있었다. 그런데 사이트맵과 별개로 정상이라고 생각했던 페이지들의 HTTPS 집계와 색인, 검색 노출도 실제로는 안정되지 않은 상태였다.">
+
+
+
+  <meta name="author" content="JU-HEY(주헤이)">
+  
+  <meta property="article:author" content="JU-HEY(주헤이)">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ju-hey.log">
+<meta property="og:title" content="[GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지">
+<meta property="og:url" content="https://juheyday.github.io/memo/post-011/">
+
+
+  <meta property="og:description" content="사이트맵 제출을 포기하고 블로그 안정화 작업만 계속 해오고 있었다. 그런데 사이트맵과 별개로 정상이라고 생각했던 페이지들의 HTTPS 집계와 색인, 검색 노출도 실제로는 안정되지 않은 상태였다.">
+
+
+
+  <meta property="og:image" content="https://ju-hey-console.vercel.app/api/images/post-011/d63b004f-46df-47c0-9d16-613b96bbff47.jpg">
+  
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-09-10T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2026-09-12T04:39:20+09:00">
+
+
+
+  <meta name="keywords" content="깃허브, 일상, 취미, SEO">
+  
+  <meta property="article:tag" content="깃허브">
+  
+  <meta property="article:tag" content="일상">
+  
+  <meta property="article:tag" content="취미">
+  
+  <meta property="article:tag" content="SEO">
+  
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://juheyday.github.io/memo/post-011/">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://juheyday.github.io/memo/post-011/"
+  },
+  "headline": "[GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지",
+  "image": [
+    "https://ju-hey-console.vercel.app/api/images/post-011/d63b004f-46df-47c0-9d16-613b96bbff47.jpg"
+  ],
+  "datePublished": "2026-09-10T00:00:00+09:00",
+  "dateModified": "2026-09-12T04:39:20+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "JU-HEY(주헤이)"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ju-hey.log"
+  }
+}
+</script>
+
+
+
+
+
+  <meta name="google-site-verification" content="O5Av_-AT3LHepLq4FDrRzdzUByiUP6EDbFd3NUG2jmI" />
+
+
+
+
+
+  <meta name="naver-site-verification" content="e503f49eb5520ae60b19c0aa5381641dcca981de">
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<link rel="preconnect" href="https://ju-hey-console.vercel.app" crossorigin>
+
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" as="style" integrity="sha384-uGEvnSEpW2nM9xJFsrxrwakwrk9QdDTQIBJh0hVMu90OaVyMAMpAK1rIn0/Kh1/k" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" integrity="sha384-uGEvnSEpW2nM9xJFsrxrwakwrk9QdDTQIBJh0hVMu90OaVyMAMpAK1rIn0/Kh1/k" crossorigin="anonymous"></noscript>
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css" as="style" integrity="sha384-qrALq7+6jBOZIQsNnT6xGkMDru64qD6uTlDra39xrt2SoXl4pO3FX6Roz/RpR/BS" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css" integrity="sha384-qrALq7+6jBOZIQsNnT6xGkMDru64qD6uTlDra39xrt2SoXl4pO3FX6Roz/RpR/BS" crossorigin="anonymous"></noscript>
+
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- favicon -->
+
+
+
+
+
+  <link rel="icon" href="/assets/images/favicon-preset-star.svg" type="image/svg+xml">
+
+
+<!-- feed autodiscovery: footer 노출 여부와 무관하게 구독/발견성 신호 제공 -->
+<link
+  href="/feed.xml"
+  type="application/atom+xml"
+  rel="alternate"
+  title="ju-hey.log Feed">
+<link
+  href="/rss.xml"
+  type="application/rss+xml"
+  rel="alternate"
+  title="ju-hey.log RSS 2.0">
+
+<!-- likes: 명시적으로 false일 때만 off, site-settings 없으면 기존처럼 로드 -->
+
+
+
+  <script src="/assets/js/likes.js" defer></script>
+
+
+<!-- AdSense: manual placements only; render loader once when explicitly enabled in settings -->
+
+
+<script id="blogInteractionLock">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("no-select");
+
+    document.addEventListener("contextmenu", function (event) {
+      if (event.target && event.target.closest && event.target.closest(".masthead")) return;
+      event.preventDefault();
+    });
+  });
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          ju-hey.log
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                  <a href="/travel/">Travel</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/review/">Review</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/memo/">Memo</a>
+                </li><li class="masthead__menu-item">
+                  <a href="/picks/">Picks</a>
+                </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          
+
+
+
+<svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+  <circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>
+</svg>
+
+
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <span class="navicon" aria-hidden="true"></span>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- THE ULTIMATE HEADER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  let lastScrollY = 0;
+  let hideTimer = null;
+  const revealZone = 34;
+  const topLock = 50;
+  const idleDelay = 3000;
+
+  const showHeader = () => {
+    masthead.classList.remove('is-hidden');
+  };
+
+  const hideHeader = () => {
+    if (window.scrollY > topLock && !masthead.matches(':hover')) {
+      masthead.classList.add('is-hidden');
+    }
+  };
+
+  const clearHideTimer = () => {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  };
+
+  const scheduleIdleHide = () => {
+    clearHideTimer();
+    if (window.scrollY <= topLock) return;
+    hideTimer = setTimeout(() => {
+      hideHeader();
+    }, idleDelay);
+  };
+
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY || 0;
+    const delta = currentY - lastScrollY;
+
+    if (currentY <= topLock) {
+      showHeader();
+      clearHideTimer();
+    } else if (delta > 4) {
+      hideHeader();
+      clearHideTimer();
+    } else if (delta < -4) {
+      showHeader();
+      scheduleIdleHide();
+    } else {
+      scheduleIdleHide();
+    }
+
+    lastScrollY = currentY;
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    if (e.clientY <= revealZone) {
+      showHeader();
+      scheduleIdleHide();
+    }
+  }, { passive: true });
+
+  masthead.addEventListener('mouseenter', () => {
+    clearHideTimer();
+    showHeader();
+  });
+  masthead.addEventListener('mouseleave', () => {
+    scheduleIdleHide();
+  });
+
+  requestAnimationFrame(() => {
+    lastScrollY = window.scrollY || 0;
+    scheduleIdleHide();
+  });
+});
+</script>
+<!-- /THE ULTIMATE HEADER SCRIPT -->
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+
+
+
+
+<div id="main" class="single-main-grid" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://juheyday.github.io/">
+        <img src="/assets/images/author-avatar.jpg" alt="JU-HEY(주헤이)" width="140" height="140" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <p class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://juheyday.github.io/" itemprop="url">JU-HEY(주헤이)</a>
+    </p>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>여행, 스토리와 플레이, 그리고 사소한 기록들을 담는 공간입니다.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          
+
+
+
+<svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>
+</svg>
+
+ <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/juheyday" rel="nofollow noopener noreferrer me" itemprop="sameAs">
+
+
+
+<svg class="site-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+  <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+</svg>
+
+<span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+  </div>
+</div>
+
+  
+  
+    
+
+
+
+  
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지">
+    <meta itemprop="description" content="사이트맵 제출을 포기하고 색인을 위한 블로그 안정화를 계속 해오던 중 구글 서치 콘솔에서의 검색 노출이 안 되고 있다는 것을 알게 되었다.">
+    <meta itemprop="datePublished" content="2026-09-10T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2026-09-12T04:39:20+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header class="page__header page__header--has-hero">
+          
+            <img class="page__header-bg" src="https://ju-hey-console.vercel.app/api/images/post-011/d63b004f-46df-47c0-9d16-613b96bbff47.jpg" alt="[GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지" loading="eager">
+            <div class="page__header-overlay"></div>
+          
+          <div class="page__header-content">
+            <div class="page__title-row">
+              <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                <a href="https://juheyday.github.io/memo/post-011/" itemprop="url">[GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지
+</a>
+              </h1>
+
+              
+                
+                
+                <span class="page__title-readtime">
+                  <i class="far fa-clock" aria-hidden="true"></i>
+                  
+                    6 분 소요
+                  
+                </span>
+              
+            </div>
+
+            <div class="page__header-meta">
+              
+
+  
+    
+
+
+
+  
+
+  <div class="page__meta-item page__meta-item--tags">
+    <span class="page__meta-label" aria-hidden="true"><i class="fas fa-fw fa-tags" aria-hidden="true"></i></span>
+    <span class="page__meta-values" itemprop="keywords">
+    
+      
+      
+      <a href="/tags/seo/" class="page__meta-value p-category" rel="tag">#SEO</a>
+    
+      
+      
+      <a href="/tags/%EA%B9%83%ED%97%88%EB%B8%8C/" class="page__meta-value p-category" rel="tag">#깃허브</a>
+    
+      
+      
+      <a href="/tags/%EC%9D%BC%EC%83%81/" class="page__meta-value p-category" rel="tag">#일상</a>
+    
+      
+      
+      <a href="/tags/%EC%B7%A8%EB%AF%B8/" class="page__meta-value p-category" rel="tag">#취미</a>
+    
+    </span>
+  </div>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <div class="page__meta-item page__meta-item--categories">
+    <span class="page__meta-label" aria-hidden="true"><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i></span>
+    <span class="page__meta-values" itemprop="keywords">
+    
+      
+      
+      
+        
+      
+        
+      
+        
+          
+          
+      
+      
+      <a href="/memo/" class="page__meta-value p-category" rel="tag">Memo</a>
+    
+    </span>
+  </div>
+
+
+  
+
+
+              
+
+
+
+
+
+
+
+
+  <div class="page__meta-item page__meta-item--date">
+    <span class="page__meta-label" aria-hidden="true"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></span>
+    <span class="page__meta-values">
+      <time class="page__meta-value dt-published" datetime="2026-09-10T00:00:00+09:00">2026. 9. 10.</time>
+      
+        <span class="page__meta-date-edit">
+          (<time class="page__meta-value dt-updated" datetime="2026-09-12T04:39:20+09:00">2026. 9. 11.</time> 수정됨)
+        </span>
+      
+    </span>
+  </div>
+
+
+            </div>
+          </div>
+        </header>
+      
+
+      
+        
+
+
+
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+        
+          
+            <aside class="post-toc" aria-label="Table of contents">
+              <header class="post-toc__header">
+                <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d="M3 6h.01"></path>
+  <path d="M3 12h.01"></path>
+  <path d="M3 18h.01"></path>
+  <path d="M8 6h13"></path>
+  <path d="M8 12h13"></path>
+  <path d="M8 18h13"></path>
+</svg>
+
+                <span>목차</span>
+              </header>
+              <nav class="toc post-toc__nav">
+                <ul class="toc__menu"><li><a href="#서치-콘솔의-사이트맵-읽기는-포기">서치 콘솔의 사이트맵 읽기는 포기</a></li><li><a href="#사이트맵도-포기했는데-렌더링-이슈까지-발생">사이트맵도 포기했는데 렌더링 이슈까지 발생</a></li><li><a href="#오류-개선-후-검색되기-시작한-페이지들">오류 개선 후 검색되기 시작한 페이지들</a></li></ul>
+              </nav>
+            </aside>
+
+            <button class="reading-toc-toggle" type="button" aria-label="목차 열기" aria-controls="reading-toc-panel" aria-expanded="false" title="목차">
+              <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d="M3 6h.01"></path>
+  <path d="M3 12h.01"></path>
+  <path d="M3 18h.01"></path>
+  <path d="M8 6h13"></path>
+  <path d="M8 12h13"></path>
+  <path d="M8 18h13"></path>
+</svg>
+
+            </button>
+            <aside id="reading-toc-panel" class="reading-toc-panel" aria-label="읽기 목차" hidden>
+              <header class="reading-toc-panel__header">
+                <span><svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d="M3 6h.01"></path>
+  <path d="M3 12h.01"></path>
+  <path d="M3 18h.01"></path>
+  <path d="M8 6h13"></path>
+  <path d="M8 12h13"></path>
+  <path d="M8 18h13"></path>
+</svg>
+ 목차</span>
+                <button class="reading-toc-panel__close" type="button" aria-label="목차 닫기" title="닫기">
+                  <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d="M18 6 6 18"></path>
+  <path d="m6 6 12 12"></path>
+</svg>
+
+                </button>
+              </header>
+              <nav class="toc reading-toc-panel__nav">
+                <ul class="toc__menu"><li><a href="#서치-콘솔의-사이트맵-읽기는-포기">서치 콘솔의 사이트맵 읽기는 포기</a></li><li><a href="#사이트맵도-포기했는데-렌더링-이슈까지-발생">사이트맵도 포기했는데 렌더링 이슈까지 발생</a></li><li><a href="#오류-개선-후-검색되기-시작한-페이지들">오류 개선 후 검색되기 시작한 페이지들</a></li></ul>
+              </nav>
+            </aside>
+          
+        
+        <h3 id="서치-콘솔의-사이트맵-읽기는-포기">서치 콘솔의 사이트맵 읽기는 포기</h3>
+
+<p> </p>
+
+<p>주헤이가 일상 블로그를 시작한지도 어언 8개월.</p>
+
+<p> </p>
+
+<p>처음 2개월 동안엔 깃허브 페이지 안정화를 지속했고  <br />
+그 뒤로 4개월간은 <strong>구글 서치 콘솔(Search Console)</strong>의<strong><br />사이트맵을 제출</strong>하는 데에 집착했다.</p>
+
+<p> </p>
+
+<p>진짜로 사이트맵 읽기를 중요하게 생각하거나  <br />
+그런 것은 아니고 그냥 이런 컨텐츠 거리가 생기면  <br />
+간헐적으로 몰두하는 게 사소한 습관이다:)</p>
+
+<p> </p>
+
+<p>구글 서치 콘솔의 <strong>사이트맵</strong> 수집은 <strong>알 수 없는 사유</strong>로  <br />
+‘<strong>가져올 수 없음</strong>’ 오류를 내기로 유명하다.</p>
+
+<p> </p>
+
+<figure class=" gallery-preset-auto gallery-count-1 gallery-single  ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/e09cbd40-33b9-4158-90d4-9b79153b90ff.jpg" title="구글 서치 콘솔의 사이트맵 제출 오류 화면">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/e09cbd40-33b9-4158-90d4-9b79153b90ff.jpg" alt="구글 서치 콘솔의 사이트맵 제출 오류 화면" />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>구글 서치 콘솔의 사이트맵 제출 오류 화면. 여러 가지 개선 시도에도 여전하다.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p>그렇지만 한 가지 다행인 점이라면,  <br />
+<strong>구글</strong>이기 때문에 온라인에 공유되는 팁도 많고  <br />
+사례도 많고 테스트 방법도 많다.</p>
+
+<p> </p>
+
+<p>덕분에 Reddit을 비롯한 여러 사이트에서  <br />
+다른 유저들의 후기도 다양하게 접했다.</p>
+
+<p> </p>
+
+<p>그걸 보고 AI 툴들의 도움을 받아 다 따라 해보고  <br />
+온갖 시도를 해봤지만 여전히 <strong>요지부동</strong>.</p>
+
+<p> </p>
+
+<p>주헤이와 유사하게 jekyll 기반 블로그를 만들어도  <br />
+사이트맵 수집이 잘되는 사례가 숱하게 있었다.</p>
+
+<p> </p>
+
+<p>그렇지만 모두가 가리키는 결론은,  <br />
+사이트맵 수집 오류가 일단 발생하면  <br />
+‘정확한 이유를 특정하기 어렵다’는 거였다.</p>
+
+<p> </p>
+
+<p>올해 들어서는 AI 툴을 수차례 옮겨 다녔는데,  <br />
+그도 그럴 게 상반기 동안만에도 AI들이  <br />
+두루두루 장족의 발전을 이루었다.</p>
+
+<p> </p>
+
+<p>그 중 무엇 하나 사이트맵 이슈를 해결하지 못했고  <br />
+주헤이는 쉽사리 시도해보지 못하고  <br />
+남겨두었던 <em>마지막 방법</em>에까지 손을 대기에 이른다.</p>
+
+<p> </p>
+
+<figure class="half gallery-preset-auto gallery-count-2   ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/fe57ad80-dbc6-4f8a-9bd8-bc30003cf897.jpg" title="GitHub 사용자 Settings의 사용자명 변경 화면">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/fe57ad80-dbc6-4f8a-9bd8-bc30003cf897.jpg" alt="GitHub 사용자 Settings의 사용자명 변경 화면" />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/22f16f12-eac9-4006-a239-423ddef43997.jpg" title="GitHub 레포지토리의 Settings 화면.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/22f16f12-eac9-4006-a239-423ddef43997.jpg" alt="GitHub 레포지토리의 Settings 화면." />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>깃허브 페이지 주소 변경은 계정의 사용자명과 레포지토리 이름을 변경하는 것으로 시작된다. 물론 이후로도 환경변수나 리디렉션 등 변경할 것이 수두룩하다.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<h4 id="바로--블로그-주소를-바꿔보는-것"><strong>바로 </strong> <span style="color:rgb(168, 85, 247)"><strong>블로그 주소</strong></span><strong>를 바꿔보는 것.</strong></h4>
+
+<p> </p>
+
+<p>블로그 주소에 대쉬(-)같은 문자가 포함된 경우에  <br />
+대쉬가 없는 걸로 바꾸면 해결된다는 후기도 있었지만  <br />
+그래도 해결이 안 됐다는 후기도 있었다.</p>
+
+<p> </p>
+
+<p>블로그 주소를 바꾸기 싫었던 것도 있지만  <br />
+이걸 시도해도 해결이 안 될 것 같은 느낌도 들었다.</p>
+
+<p> </p>
+
+<p>실제로도 그랬다.</p>
+
+<p> </p>
+
+<p>어쨌든 블로그 주소 변경을 위해  <br />
+<strong>깃허브 레포지토리 이름을 변경</strong>한 뒤로  <br />
+또 <strong>한 달 반</strong>이 지났다.</p>
+
+<p> </p>
+
+<div class="callout callout-tip">
+
+  <p><strong>깃허브 페이지 주소 변경</strong>은 계정의 사용자 이름을 변경하고 레포지토리 이름을 변경하면 1차 완료된다.<br />
+<span style="color:rgb(127, 29, 29)"><strong>사용자 이름</strong></span>은 [GitHub 계정 Settings &#62; Account &#62; Change username]에서 변경할 수 있다.<br />
+<span style="color:rgb(127, 29, 29)"><strong>레포지토리 이름</strong></span>은 [GitHub 레포지토리 &#62; Settings &#62; General &#62; Repository name]에서 변경할 수 있다.<br />
+물론 이후로도 환경변수나 리디렉션 등 변경할 것이 수두룩하다.</p>
+
+</div>
+
+<p> </p>
+
+<p>블로그 주소가 변경된 뒤로는  <br />
+시간이 날 때마다 안정화 작업만 해왔다.</p>
+
+<p> </p>
+
+<p>한 달이 넘으면 안정될 즈음이라 기다렸는데  <br />
+역시 사이트맵은 안 읽혔다.</p>
+
+<p> </p>
+
+<p>그냥 글 쓸 때마다 <strong>수동 업데이트</strong> 하기로 했다.</p>
+
+<p> </p>
+
+<p>...라고 결심해놓고 아마 새롭게 시도할 만한  <br />
+아이디어가 떠오르면 또 득달같이 해보겠지.</p>
+
+<p> </p>
+
+<p>아무튼 주소를 변경했으므로 바뀐 주소로  <br />
+포스트들이 잘 읽히기만 기다렸다.</p>
+
+<p> </p>
+
+<h3 id="사이트맵도-포기했는데-렌더링-이슈까지-발생">사이트맵도 포기했는데 렌더링 이슈까지 발생</h3>
+
+<p> </p>
+
+<p>그리고 이제는 변경된 주소를 계속 쓰기로 했으므로  <br />
+이전 주소의 <strong>리디렉션</strong> 처리도 해두었고  <br />
+<strong>네이버 서치 어드바이저</strong>에도 등록해두었다.</p>
+
+<figure class="half gallery-preset-auto gallery-count-2   ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/a9e11471-f45d-4238-9be5-4e43f3272b5c.jpg" title="클릭이 없을 때도 검색 노출은 꾸준히 있었다.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/a9e11471-f45d-4238-9be5-4e43f3272b5c.jpg" alt="클릭이 없을 때도 검색 노출은 꾸준히 있었다." />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/b65ae01c-4731-421f-8b63-425df930f577.jpg" title="클릭이 없을 때도 검색 노출은 꾸준히 있었다.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/b65ae01c-4731-421f-8b63-425df930f577.jpg" alt="클릭이 없을 때도 검색 노출은 꾸준히 있었다." />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>네이버 웹마스터 도구. 클릭 수를 나타내는 노란 선이 다 똑같이 바닥의 시간축에 붙은 것처럼 보이지만 저 때도 일 0~7회를 오가고 있었다.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p>그로부터 다시 <strong>2주</strong>가 더 지났는데  <br />
+<strong>구글 서치 콘솔</strong>에서 클릭 수는 커녕 <strong>검색 노출</strong>도  <br />
+대부분 <span style="color:rgb(244, 63, 94)"><strong>하루 5회 미만</strong></span>으로 나오는 날이 이어졌다.</p>
+
+<p> </p>
+
+<p>뭔가 이상해서, 구글 서치 콘솔만 확인하느라  <br />
+잊고 지냈던 네이버 서치 어드바이저를 들어가봤다.</p>
+
+<p> </p>
+
+<p><strong>네이버 검색에서의 노출</strong>은 그동안 <strong>꾸준히 늘고 있었고</strong>  <br />
+클릭이 없는 날도 검색 노출 횟수가 <strong>80회 이상</strong>이었다.</p>
+
+<p> </p>
+
+<p>그래서 처음 몇일 동안에는  <br />
+구글에서만 페이지 수집이 안 되는 줄 알고  <br />
+이제 믿을 건 네이버밖에 없나 싶었다.</p>
+
+<p> </p>
+
+<p>그러다 갑자기 호기심이 동해서  <br />
+<strong>빙(Bing) 웹마스터 도구</strong>에도 주소를 등록해봤다.</p>
+
+<p> </p>
+
+<p><strong>그런데 빙에서도 수일이 지나도<br />포스트들이 감지가 잘 안 되는 듯 보였다.</strong></p>
+
+<p> </p>
+
+<p>나날이 비약적으로 발전 중인 CODEX의 GPT SOL은  <br />
+여전히 블로그에 아무런 문제 없다고 말했다.</p>
+
+<p> </p>
+
+<p>블로그를 직접 들어가봐도 눈에 띄는 문제가 없었다.</p>
+
+<p> </p>
+
+<p>상황을 정리해보면 다음과 같다:</p>
+
+<ul>
+  <li>
+    <p>7월 초에 GitHub Pages <strong>주소를 변경</strong>했다.</p>
+  </li>
+  <li>
+    <p>새 주소의 블로그는 <strong>브라우저에서 정상적</strong>으로 열렸다.</p>
+  </li>
+  <li>
+    <p>개별 포스트도 접속할 수 있었고 URL 검사에서도 페이지 자체를 읽을 수 있었다.</p>
+  </li>
+  <li>
+    <p>따라서 사이트맵 오류는 남아 있더라도 나머지 페이지에는 큰 문제가 없을 것으로 생각했다.</p>
+  </li>
+  <li>
+    <p>주소 이전은 검색엔진이 <strong>이전 URL과 새 URL을 하나씩 다시 처리</strong>하는 과정이라는 점도 고려해 <strong>기다려봤다</strong>.</p>
+  </li>
+  <li>
+    <p>그런데 시간이 지나도 <strong>검색 노출도 거의 안 됐다.</strong></p>
+  </li>
+</ul>
+
+<p> </p>
+
+<p>주헤이는 컴퓨터 전공자가 아니라서 잘은 모르지만  <br />
+우리에겐 여러 도우미들이 있으므로  <br />
+서치 콘솔 등을 또 다시 이모저모 뒤져봤다.</p>
+
+<p> </p>
+
+<p><strong>알고 보니 새 주소를 쓴 뒤로 구글 HTTPS 보고서에<br />모든 포스트가 한꺼번에 집계된 적이 없었다.</strong></p>
+
+<p> </p>
+
+<figure class=" gallery-preset-auto gallery-count-1 gallery-single gallery-single--small ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/0c93c864-e2c0-43c2-8831-a3e0026d5f6f.jpg" title="구글 서치 콘솔의 HTTPS 보고서">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/0c93c864-e2c0-43c2-8831-a3e0026d5f6f.jpg" alt="구글 서치 콘솔의 HTTPS 보고서" />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>구글 서치 콘솔의 HTTPS 보고서
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p>이 시기에는 블로그 포스트가  <br />
+아마 10개쯤이었던 것 같다.</p>
+
+<p> </p>
+
+<p>초기에는 4~5개가 보이기도 했지만  <br />
+시간이 지나며 2~3개로 줄었고,  <br />
+8월 10일 이후에는 1개만 남아 있었다.</p>
+
+<p> </p>
+
+<p>검색 노출도 두 달 중 대부분이  <br />
+하루 0~3회 수준에 머물렀으니  <br />
+<strong>검색에 노출되지 않는 거나 다름없었다.</strong></p>
+
+<p> </p>
+
+<p>당연히 검색 클릭도 거의 발생하지 않았다.</p>
+
+<p> </p>
+
+<p>그리고 <strong>색인 생성</strong>도 10여 개 페이지 중  <br />
+6~7개 정도만 잡히고 있었다.</p>
+
+<p> </p>
+
+<p>게시글을 1개 쓸 때마다 개별 URL 검사를 하면서  <br />
+색인 생성 요청도 다 해뒀고 실제로  <br />
+크롤링도 되고 있다고 나오고 있었는데 참 이상했다.</p>
+
+<p> </p>
+
+<p>이 때 비로소 페이지가 브라우저에서 잘 열리는 것과  <br />
+Google이 해당 페이지를 안정적으로 처리하는 게  <br />
+별개의 문제라는 걸 알게 됐다.</p>
+
+<p> </p>
+
+<p>그런데 도대체 뭘 기준으로 개선하고  <br />
+테스트를 해야 할지 몰랐다.</p>
+
+<p> </p>
+
+<p>그래서 다시 검색 엔진들을 오가며 막막하게 살피다가  <br />
+<strong>구글의 </strong> <span style="color:rgb(236, 72, 153)"><strong>PageSpeed Insights</strong></span>를 알게 되었다.</p>
+
+<p> </p>
+
+<figure class="third gallery-preset-auto gallery-count-3   ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/068f1d9a-4b5d-4622-89c3-dc650a0e4aed.jpg" title="구글 서치 콘솔에서 코어 웹 바이탈 확인하기.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/068f1d9a-4b5d-4622-89c3-dc650a0e4aed.jpg" alt="구글 서치 콘솔에서 코어 웹 바이탈 확인하기." />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/fcef8daf-69c0-4a85-bd4d-93423bd0c84d.jpg" title="코어 웹 바이탈에서 블로그 상태를 보려면 아직 시간이 더 지나야 할 듯하다.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/fcef8daf-69c0-4a85-bd4d-93423bd0c84d.jpg" alt="코어 웹 바이탈에서 블로그 상태를 보려면 아직 시간이 더 지나야 할 듯하다." />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/d63b004f-46df-47c0-9d16-613b96bbff47.jpg" title="PageSpeed Insights에서 모바일 페이지 접속에 문제가 있는 것을 발견했다.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/d63b004f-46df-47c0-9d16-613b96bbff47.jpg" alt="PageSpeed Insights에서 모바일 페이지 접속에 문제가 있는 것을 발견했다." />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>구글 서치 콘솔을 이것저것 뒤져보다가 PageSpeed Insights를 알게 되었다. 그런데 블로그 주소로 검사해보니 모바일 페이지에 접근할 때 문제가 있었다.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<h4 id="pagespeed-insights를-이용한-오류-추가-개선"><strong>PageSpeed Insights를 이용한 오류 추가 개선</strong></h4>
+
+<p> </p>
+
+<p>구글 서치 콘솔의 메뉴 중에서  <br />
+<span style="color:rgb(59, 130, 246)">코어 웹 바이탈</span>을 클릭해서 봤지만  <br />
+주소를 새로 등록한 이후로 90일의 데이터가  <br />
+아직 발생되지 않아서 보여줄 게 없다고 한다.</p>
+
+<p> </p>
+
+<p>대신 <span style="color:rgb(236, 72, 153)"><strong>PageSpeed Insights</strong> 사용해보기</span> 버튼이 놓여 있었다.</p>
+
+<p> </p>
+
+<p><strong>PageSpeed Insights</strong>에서 사이트 주소를 적고  <br />
+‘분석’을 실행하면 모바일과 데스크톱 환경에서  <br />
+웹페이지 속도와 사용자 경험을 측정해 개선을 제안한다.</p>
+
+<p> </p>
+
+<figure class="half gallery-preset-auto gallery-count-2   ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/2e012a24-7e8c-4e76-812f-97e0f897696c.jpg" title="블로그 성능 보고서. 데스크톱 버전 요약 보고서.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/2e012a24-7e8c-4e76-812f-97e0f897696c.jpg" alt="블로그 성능 보고서. 데스크톱 버전 요약 보고서." />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/a7eb073a-e567-4351-8240-9072bc3a7568.jpg" title="블로그 성능 보고서. 모바일 버전 상세 보고서.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/a7eb073a-e567-4351-8240-9072bc3a7568.jpg" alt="블로그 성능 보고서. 모바일 버전 상세 보고서." />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>블로그 성능 보고서. 데스크톱 버전 요약 보고서(왼쪽)와 모바일 버전 상세 보고서(오른쪽)
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p>성능 분석 보고서에서 ‘<strong>데스크톱</strong>’ 버전 검사 항목들은  <br />
+<span style="color:rgb(132, 204, 22)"><strong>80점 이상</strong></span><strong>으로 다 크게 문제 없어 보이는데</strong>  <br />
+그보다 앞서 첨부한 이미지를 보면  <br />
+‘<strong>모바일(휴대전화)</strong>’ 버전 검사 항목들 중  <br />
+<strong>성능 항목에 </strong> <span style="color:rgb(127, 29, 29)"><strong>느낌표(!)</strong></span><strong>가 떠 있다.</strong></p>
+
+<p> </p>
+
+<p>직접 블로그에 접속해서 포스트를 열람할 땐  <br />
+별다른 느낌을 받은 기억이 없지만 체감이 적었을 뿐,  <br />
+실제로는 측정에 오류가 될 정도라고 하니  <br />
+렌더링 실패가 계속 있어왔을 수 있겠다.</p>
+
+<p> </p>
+
+<h4 id="새로운-힌트로-다시-시작된-디버깅">새로운 힌트로 다시 시작된 디버깅</h4>
+
+<p> </p>
+
+<p>우여곡절 끝에 얻은 힌트로  <br />
+뭘 개선해야 할지 겨우 각이 잡혔다.</p>
+
+<p> </p>
+
+<p>CODEX에게 알려줬더니 기존에  <br />
+불필요하게 사용되던 효과도 있다면서  <br />
+알아서 정리를 시작했다.</p>
+
+<p> </p>
+
+<p>첫 화면 전체를 투명했다가 나타나는 기능을 지우거나  <br />
+이미지들이 너무 커서 작게 줄이거나  <br />
+<strong>글꼴/아이콘 로딩</strong>도 길어서 줄였다.</p>
+
+<p> </p>
+
+<p><strong>오래된 빌드 결과</strong>도 섞이지 않도록 하고  <br />
+여러 배포가 겹쳐도 최신 결과만  <br />
+최종 배포되도록 했다.</p>
+
+<p> </p>
+
+<p>카테고리 화면같은 데서 보이는  <br />
+목록 화면의 이미지들은 원본에 비해  <br />
+<strong>작은 이미지</strong>들을 사용하도록 했다.</p>
+
+<p> </p>
+
+<h3 id="오류-개선-후-검색되기-시작한-페이지들">오류 개선 후 검색되기 시작한 페이지들</h3>
+
+<p> </p>
+
+<p>몇 주나 두고 고민했던 거였는데  <br />
+개선점을 잡고 나니 하루도 안 걸려 수정을 마쳤다.</p>
+
+<p> </p>
+
+<figure class="half gallery-preset-auto gallery-count-2   ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/dc32e53d-4f2c-4a54-87dc-e0fe34127174.jpg" title="개선 후 PageSpeed Insights 모바일 버전 웹 성능 보고서.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/dc32e53d-4f2c-4a54-87dc-e0fe34127174.jpg" alt="개선 후 PageSpeed Insights 모바일 버전 웹 성능 보고서." />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/7f33e031-2639-40df-a934-624ade45e10e.jpg" title="개선 후 PageSpeed Insights 데스크톱 버전 웹 성능 보고서.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/7f33e031-2639-40df-a934-624ade45e10e.jpg" alt="개선 후 PageSpeed Insights 데스크톱 버전 웹 성능 보고서." />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>성능 측정 오류 개선 후 PageSpeed Insights 웹 성능 보고서. 오류 개선뿐만 아니라 점수도 높아졌다.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p>오류만 해결된 게 아니라  <br />
+점수도 전반적으로 훨씬 개선되어서  <br />
+기존에 80점이던 데스크톱 점수도  <br />
+90점 대가 나왔다.</p>
+
+<p> </p>
+
+<p>한 번 나온 점수가 고정되는 것은 아니고  <br />
+그 때 그 때 웹페이지 반응 상태에 따라 달라진다.</p>
+
+<p> </p>
+
+<p>이제는 대체로 모바일 버전은 80~95점 사이로 나오고  <br />
+데스크톱 버전은 88~98점 사이로 나와서  <br />
+어쨌든 <strong>전보다 훨씬 안정적</strong>으로 나오고 있다.</p>
+
+<p> </p>
+
+<p>그리고 기다려온 대망의 서치 콘솔의 보고서.</p>
+
+<p> </p>
+
+<figure class="half gallery-preset-auto gallery-count-2   ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/4eef0d4d-7fe4-4d77-8457-ee186fab1563.jpg" title="서치 콘솔의 HTTPS 보고서">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/4eef0d4d-7fe4-4d77-8457-ee186fab1563.jpg" alt="서치 콘솔의 HTTPS 보고서" />
+          </a>
+        
+      </div>
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/ec163128-89be-49e1-a91b-2a48ec3aba9d.jpg" title="서치 콘솔의 색인 생성 보고서">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/ec163128-89be-49e1-a91b-2a48ec3aba9d.jpg" alt="서치 콘솔의 색인 생성 보고서" />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>구글 서치 콘솔의 HTTPS 보고서와 색인 생성 보고서.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p><strong>문제 개선 후 3일 만에 깃허브 블로그의<br />모든 포스트 페이지가 </strong> <span style="color:rgb(41, 134, 43)"><strong>정상으로 감지</strong></span><strong>되었다.</strong></p>
+
+<p> </p>
+
+<p>참고로 ‘색인 생성되지 않음’으로 나오는 2개 페이지는  <br />
+URL 검사에 잘못 적어서 냈던 주소여서,  <br />
+원래부터 없는 페이지라 안 읽히는 거다.</p>
+
+<p> </p>
+
+<p>이후로는 조금씩이지만 구글에서도  <br />
+검색 노출 횟수와 클릭 수가 느는 게 보인다.</p>
+
+<p> </p>
+
+<figure class=" gallery-preset-auto gallery-count-1 gallery-single  ">
+  <div class="gallery-items">
+    
+      
+      
+      
+      <div class="gallery-item">
+        
+          <a href="https://ju-hey-console.vercel.app/api/images/post-011/f79b0efc-c831-4b08-bb29-c8e4ac228e4d.jpg" title="구글 서치 콘솔의 웹사이트 실적 보고서.">
+              <img class="gallery-image" src="https://ju-hey-console.vercel.app/api/images/post-011/f79b0efc-c831-4b08-bb29-c8e4ac228e4d.jpg" alt="구글 서치 콘솔의 웹사이트 실적 보고서." />
+          </a>
+        
+      </div>
+    
+  </div>
+  
+    <figcaption>구글 서치 콘솔의 웹사이트 실적 보고서. 검색 노출이 서서히 늘면서 클릭 수도 조금씩 나오기 시작했다.
+</figcaption>
+  
+  
+</figure>
+
+<p> </p>
+
+<p> </p>
+
+<hr />
+
+<p> </p>
+
+<p>직접 만들다 보니 안정화하는 것도 쉽지 않고  <br />
+이것저것 건드리다가 잘 되던 것도 안 되곤 하지만  <br />
+가끔 이렇게 진전이 생기면 또 <span style="color:rgb(245, 158, 11)">흥미진진</span>하다.</p>
+
+<p> </p>
+
+<p>이번 두 달간 일련의 경험들을 겪고 보니  <br />
+주헤이가 호기심에 페이지 구조를 자주 흔들어놔서  <br />
+연결이 불안정해 사이트맵이  <br />
+더 안 읽혔을 수도 있을 것 같다.</p>
+
+<p> </p>
+
+<p>온라인 상 후기들을 보면 깃허브 페이지를 쓸 때  <br />
+사이트맵이 안 읽히는 케이스가 흔한데,  <br />
+만약 안정적으로 유지되지 않는 HTML 구조가  <br />
+사이트맵이 안 읽히는 원인 중 하나라면  <br />
+이제 와서 보니 안 될 만했다.</p>
+
+<p> </p>
+
+<p>깃허브 페이지를 쓰는 사람들이면  <br />
+디폴트 테마를 얌전히 쓰지 못하고  <br />
+이것저것 휘저어보는 경우도 많을 테니까.</p>
+
+<p> </p>
+
+<p>특히 잘 알지 못하는데도 용감하게 휘젓는  <br />
+주헤이같은 경우는 더더욱  <br />
+사이트맵 자동 읽기는 포기해야겠지..</p>
+
+<p> </p>
+
+<p>그래서 당분간은 구조는 그대로 둘까 싶었지만  <br />
+다음엔 <span style="color:rgb(6, 182, 212)">여행 지도</span>나 관련 컨텐츠를  <br />
+만들어 넣어보고 싶기도 하고 그렇다:)</p>
+
+<p> </p>
+
+<p>아마도 사이트맵 개선은 아주 먼 얘기가 되겠다.</p>
+
+<p> </p>
+
+<p>아, 참고로 광고를 다는 <strong>구글 애드센스</strong>는  <br />
+6개월간 2번 정도 신청해보고 두 번 다 까여서  <br />
+최근에 안정화 작업 직후 또 신청하고 <span style="color:rgb(59, 130, 246)"><strong>대기 중</strong></span>이다.</p>
+
+<p> </p>
+
+<p>언젠가 그것도 성공하는 날이 와서  <br />
+소식을 알릴 수 있었으면 좋겠다.</p>
+
+        
+      </section>
+
+      
+        
+
+
+
+      
+
+      
+
+
+
+<div class="post-actions-bar">
+  <div class="post-actions-bar__primary">
+    
+      
+      
+      
+      <button class="post-action-btn post-like-btn" data-like-post="_posts/2026-09-10-post-011.md" aria-label="Like this post">
+        <svg class="like-heart" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <span class="like-count"></span>
+      </button>
+    
+
+    
+      <button class="post-action-btn post-share-btn" aria-label="공유하기" onclick="document.getElementById('share-modal').classList.add('is-visible')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        </svg>
+      </button>
+    
+  </div>
+
+  <button class="post-action-btn post-top-btn" type="button" aria-label="맨 위로 이동" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5"/><path d="m5 12 7-7 7 7"/>
+    </svg>
+    <span>맨 위</span>
+  </button>
+
+  
+    <div id="share-modal" class="share-modal-overlay" onclick="if(event.target===this)this.classList.remove('is-visible')">
+      <div class="share-modal">
+        <button class="share-modal__close" aria-label="Close" onclick="document.getElementById('share-modal').classList.remove('is-visible')">&times;</button>
+        <h4 class="share-modal__title">공유하기</h4>
+        <div class="share-modal__links">
+          <a href="https://x.com/intent/tweet?text=%5BGitHub+Pages%5D+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EC%A3%BC%EC%86%8C+%EC%9D%B4%EC%A0%84+%ED%9B%84+%EA%B2%80%EC%83%89+%EB%85%B8%EC%B6%9C%EA%B3%BC+%ED%81%B4%EB%A6%AD%EC%9D%B4+%EC%8B%9C%EC%9E%91%EB%90%98%EA%B8%B0%EA%B9%8C%EC%A7%80%20https%3A%2F%2Fjuheyday.github.io%2Fmemo%2Fpost-011%2F" class="share-modal__link share-modal__link--x" onclick="window.open(this.href,'_blank','width=550,height=420');return false;">
+            <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span>X</span>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjuheyday.github.io%2Fmemo%2Fpost-011%2F" class="share-modal__link share-modal__link--facebook" onclick="window.open(this.href,'_blank','width=550,height=420');return false;">
+            <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span>Facebook</span>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://juheyday.github.io/memo/post-011/" class="share-modal__link share-modal__link--linkedin" onclick="window.open(this.href,'_blank','width=550,height=420');return false;">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+          </a>
+          <a href="https://bsky.app/intent/compose?text=%5BGitHub+Pages%5D+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EC%A3%BC%EC%86%8C+%EC%9D%B4%EC%A0%84+%ED%9B%84+%EA%B2%80%EC%83%89+%EB%85%B8%EC%B6%9C%EA%B3%BC+%ED%81%B4%EB%A6%AD%EC%9D%B4+%EC%8B%9C%EC%9E%91%EB%90%98%EA%B8%B0%EA%B9%8C%EC%A7%80%20https%3A%2F%2Fjuheyday.github.io%2Fmemo%2Fpost-011%2F" class="share-modal__link share-modal__link--bluesky" onclick="window.open(this.href,'_blank','width=550,height=420');return false;">
+            <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span>Bluesky</span>
+          </a>
+          <button class="share-modal__link share-modal__link--copy" onclick="navigator.clipboard.writeText('https://juheyday.github.io/memo/post-011/');this.querySelector('span').textContent='복사됨!';setTimeout(()=>this.querySelector('span').textContent='링크 복사',1500);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>링크 복사</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+  <section class="post-category-index" data-post-category-index data-nosnippet>
+    <button
+      class="post-category-index__toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="post-category-index-panel-post-011"
+      data-post-category-index-toggle
+    >
+      <span class="post-category-index__title">이 카테고리의 글</span>
+      <span class="post-category-index__meta">
+        <span>2개</span>
+        <span data-post-category-index-label>펼치기</span>
+        <span class="post-category-index__chevron" aria-hidden="true">⌄</span>
+      </span>
+    </button>
+
+    <div id="post-category-index-panel-post-011" class="post-category-index__panel" data-post-category-index-panel hidden>
+      <ul class="post-category-index__list" data-post-category-index-list data-page-size="5">
+        
+          
+
+
+
+
+
+
+          
+            
+            <li class="post-category-index__item is-current" data-post-category-index-item>
+              <a class="post-category-index__link" href="/memo/post-011/" aria-current="page">
+                [GitHub Pages] 블로그 주소 이전 후 검색 노출과 클릭이 시작되기까지
+              </a>
+              <time class="post-category-index__date" datetime="2026-09-10T00:00:00+09:00">
+                2026.09.10
+              </time>
+            </li>
+          
+        
+          
+
+
+
+
+
+
+          
+            
+            <li class="post-category-index__item" data-post-category-index-item>
+              <a class="post-category-index__link" href="/memo/my-first-post/">
+                깃허브 블로그 시작하기
+              </a>
+              <time class="post-category-index__date" datetime="2026-03-09T00:00:00+09:00">
+                2026.03.09
+              </time>
+            </li>
+          
+        
+      </ul>
+
+      
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var root = document.querySelector('[data-post-category-index]');
+      if (!root) return;
+      var toggle = root.querySelector('[data-post-category-index-toggle]');
+      var panel = root.querySelector('[data-post-category-index-panel]');
+      var label = root.querySelector('[data-post-category-index-label]');
+      var chevron = root.querySelector('.post-category-index__chevron');
+      var list = root.querySelector('[data-post-category-index-list]');
+      var pagination = root.querySelector('[data-post-category-index-pagination]');
+      if (!toggle || !panel || !list) return;
+
+      toggle.addEventListener('click', function () {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        root.classList.toggle('is-open', !expanded);
+        panel.hidden = expanded;
+        if (label) label.textContent = expanded ? '펼치기' : '접기';
+        if (chevron) chevron.textContent = expanded ? '⌄' : '⌃';
+      });
+
+      if (!pagination) return;
+      var items = Array.prototype.slice.call(list.querySelectorAll('[data-post-category-index-item]'));
+      var perPage = Number(list.getAttribute('data-page-size')) || 5;
+      var pageCount = Math.ceil(items.length / perPage);
+      var currentPage = 1;
+      var previous = pagination.querySelector('[data-post-category-index-previous]');
+      var next = pagination.querySelector('[data-post-category-index-next]');
+      var pages = pagination.querySelector('[data-post-category-index-pages]');
+      if (!previous || !next || !pages) return;
+
+      function render(page) {
+        currentPage = Math.max(1, Math.min(pageCount, page));
+        items.forEach(function (item, index) {
+          item.hidden = Math.floor(index / perPage) + 1 !== currentPage;
+        });
+        previous.disabled = currentPage === 1;
+        next.disabled = currentPage === pageCount;
+        Array.prototype.forEach.call(pages.children, function (button, index) {
+          var selected = index + 1 === currentPage;
+          button.classList.toggle('is-current', selected);
+          button.setAttribute('aria-current', selected ? 'page' : 'false');
+        });
+      }
+
+      for (var page = 1; page <= pageCount; page += 1) {
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'post-category-index__page';
+        button.textContent = String(page);
+        button.setAttribute('aria-label', page + '페이지');
+        button.addEventListener('click', (function (targetPage) {
+          return function () { render(targetPage); };
+        }(page)));
+        pages.appendChild(button);
+      }
+
+      previous.addEventListener('click', function () { render(currentPage - 1); });
+      next.addEventListener('click', function () { render(currentPage + 1); });
+      render(1);
+    }());
+  </script>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+
+
+
+
+
+
+
+
+
+<aside class="page__right-visual" aria-label="Right sidebar visual area">
+  
+    <picture class="right-rail-picture">
+      <source media="(min-width: 1024px)" srcset="/assets/images/site/sidebar-right.jpg?v=1776269532">
+      <img class="right-rail-image rr-focus-center-right" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" width="1280" height="1600" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+    
+      <div class="right-rail-credit">사진: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%93%A4%ED%8C%90%EC%97%90%EC%84%9C-%ED%92%80%EC%9D%84-%EB%9C%AF%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%96%91%EA%B3%BC-%EC%97%BC%EC%86%8C-%EB%96%BC-PPk4D9zCKoo?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Unsplash</a>의 <a href="https://unsplash.com/ko/@maihonhassan?utm_source=unsplash&amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_content=creditCopyText" rel="nofollow noopener noreferrer" target="_blank">Najmul Hasan</a></div>
+    
+  
+</aside>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+
+
+
+
+
+
+        
+        
+        
+        
+  
+
+
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+  
+    
+    
+
+
+
+
+
+
+    
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        
+      
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+      
+      
+    
+  
+
+
+
+  
+    
+    
+
+
+
+
+
+
+    
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+  
+    
+    
+
+
+
+
+
+
+    
+    
+  
+    
+
+
+
+  <div class="page__related" data-nosnippet>
+    
+    <h2 class="page__related-title">이어서 둘러보기</h2>
+    <div class="grid__wrapper">
+      
+      
+        
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img
+          src="https://ju-hey-console.vercel.app/api/images/my-first-post/08ad3b13-8539-484c-8d2b-6e3c34b10c0e.jpg?variant=card"
+          alt="깃허브 블로그 시작하기
+"
+          width="320"
+          height="180"
+          loading="lazy">
+        
+
+  
+  
+  
+  
+  <span class="post-card-readtime">
+
+
+
+<svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg>
+
+1 min</span>
+
+
+      </div>
+    
+    <h3 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/memo/my-first-post/" rel="permalink" data-post-card-nav="1">깃허브 블로그 시작하기
+</a>
+      
+    </h3>
+    <p class="archive__item-excerpt p-summary" itemprop="description">사서 하는 고생의 시작.
+</p>
+    
+      <p class="archive__item-date">
+        <time datetime="2026-03-09T00:00:00+09:00">2026.03.09</time>
+      </p>
+    
+  </article>
+</div>
+
+        
+      
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img
+          src="https://ju-hey-console.vercel.app/api/images/post-010/152f40b3-9b18-4b60-9c3a-f31a1e48d2ee.jpg?variant=card"
+          alt="[옷] 무신사 유즈드 내돈내산 이용 후기 - 마시모두띠 가죽자켓 1만 원대
+"
+          width="320"
+          height="180"
+          loading="lazy">
+        
+
+  
+  
+  
+  
+  <span class="post-card-readtime">
+
+
+
+<svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg>
+
+2 min</span>
+
+
+      </div>
+    
+    <h3 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/review/post-010/" rel="permalink" data-post-card-nav="1">[옷] 무신사 유즈드 내돈내산 이용 후기 - 마시모두띠 가죽자켓 1만 원대
+</a>
+      
+    </h3>
+    <p class="archive__item-excerpt p-summary" itemprop="description">네이버 웹툰 쿠키벌이를 위해 무신사 유즈드 써본 후기. 마시모두띠 가죽자켓을 1만 원대에 구입했다.
+</p>
+    
+      <p class="archive__item-date">
+        <time datetime="2026-08-31T00:00:00+09:00">2026.08.31</time>
+      </p>
+    
+  </article>
+</div>
+
+        
+      
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img
+          src="https://ju-hey-console.vercel.app/api/images/post-009/58221255-2802-49b2-9f67-54424eeb3250.jpg?variant=card"
+          alt="[피규어] 진격의 거인/번외 - 세일러문, 텔레토비
+"
+          width="320"
+          height="180"
+          loading="lazy">
+        
+
+  
+  
+  
+  
+  <span class="post-card-readtime">
+
+
+
+<svg class="site-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg>
+
+3 min</span>
+
+
+      </div>
+    
+    <h3 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/review/post-009/" rel="permalink" data-post-card-nav="1">[피규어] 진격의 거인/번외 - 세일러문, 텔레토비
+</a>
+      
+    </h3>
+    <p class="archive__item-excerpt p-summary" itemprop="description">여러 가지 피규어들. 진격의 거인, 세일러문, 텔레토비.
+</p>
+    
+      <p class="archive__item-date">
+        <time datetime="2026-08-29T00:00:00+09:00">2026.08.29</time>
+      </p>
+    
+  </article>
+</div>
+
+        
+      
+    </div>
+  </div>
+
+
+  
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.page__header');
+  const title = header ? header.querySelector('.page__title') : null;
+  if (!header || !title) return;
+
+  const syncHeaderHeight = () => {
+    header.style.setProperty('--page-header-extra-height', '0px');
+
+    const computed = window.getComputedStyle(title);
+    const lineHeight = parseFloat(computed.lineHeight);
+    if (!lineHeight || Number.isNaN(lineHeight)) return;
+
+    const titleHeight = title.getBoundingClientRect().height;
+    const lines = Math.max(1, Math.round(titleHeight / lineHeight));
+    const extraLines = Math.max(0, lines - 1);
+    const extraHeight = extraLines * lineHeight;
+
+    header.style.setProperty('--page-header-extra-height', `${extraHeight}px`);
+  };
+
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight, { passive: true });
+
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(syncHeaderHeight);
+    observer.observe(title);
+  }
+});
+</script>
+
+
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div class="page__footer-font-credits">
+  Font: 제주명조체 (제주특별자치도), 마포금빛나루체 (마포구)
+</div>
+<script src="/assets/js/external-links.js" defer></script>
+
+<script src="/assets/js/link-cards.js" defer></script>
+
+<!-- end custom footer snippets -->
+
+        
+<nav class="page__footer-site-links" aria-label="블로그 안내">
+  <a href="/about/">블로그 소개</a>
+</nav>
+
+
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://juheyday.github.io">JU-HEY. All rights reserved.</a>. Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+  <script>
+  (function () {
+    "use strict";
+
+    var loadPromise = null;
+
+    function appendScript(src) {
+      return new Promise(function (resolve, reject) {
+        var script = document.createElement("script");
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = function (error) {
+          script.remove();
+          reject(error);
+        };
+        document.head.appendChild(script);
+      });
+    }
+
+    function loadSearchAssets() {
+      if (loadPromise) return loadPromise;
+      loadPromise = appendScript("/assets/js/lunr/lunr-store.js")
+        .then(function () { return appendScript("/assets/js/search/site-search.js"); })
+        .then(function () {
+          var input = document.querySelector(".search-content input.search-input");
+          if (input && input.value) input.dispatchEvent(new Event("input", { bubbles: true }));
+        })
+        .catch(function (error) {
+          loadPromise = null;
+          console.error("Search assets could not be loaded.", error);
+        });
+      return loadPromise;
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll(".search__toggle"), function (toggle) {
+      // Keep retry triggers after a failed load; loadPromise deduplicates success.
+      toggle.addEventListener("pointerenter", loadSearchAssets, { passive: true });
+      toggle.addEventListener("focus", loadSearchAssets, { passive: true });
+      toggle.addEventListener("click", loadSearchAssets, { passive: true });
+    });
+  }());
+  </script>
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5T5QKSFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3W5T5QKSFV', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[data-post-card-nav="1"], .category-post-item a[href], .masthead__menu-item > a[href]');
+  if (!link) return;
+  if (event.defaultPrevented) return;
+  if (event.button !== 0) return;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (link.target && link.target !== '_self') return;
+
+  let url;
+  try {
+    url = new URL(link.href, window.location.href);
+  } catch (_) {
+    return;
+  }
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.hash) return;
+
+  try {
+    sessionStorage.setItem('juhey:skip-profile-nav', '1');
+  } catch (_) {
+    // Ignore storage unavailability.
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let shouldSkipProfile = false;
+  try {
+    shouldSkipProfile = sessionStorage.getItem('juhey:skip-profile-nav') === '1';
+    sessionStorage.removeItem('juhey:skip-profile-nav');
+    sessionStorage.removeItem('juhey:post-card-nav');
+  } catch (_) {
+    shouldSkipProfile = false;
+  }
+  if (!shouldSkipProfile) return;
+
+  const sidebar = document.querySelector('.single-main-grid > .sidebar, .archive-main-grid > .sidebar');
+  const target = document.querySelector('.single-main-grid > .page, .archive-main-grid > .archive');
+  if (!sidebar || !target) return;
+
+  const sidebarTop = sidebar.getBoundingClientRect().top;
+  const targetTop = target.getBoundingClientRect().top;
+  const isSidebarStackedOnTop = targetTop - sidebarTop > 80;
+  if (!isSidebarStackedOnTop) return;
+
+  const topPadding = 12;
+  const scrollTop = Math.max(0, window.pageYOffset + targetTop - topPadding);
+  window.scrollTo({ top: scrollTop, behavior: 'auto' });
+});
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  function initReadingToc() {
+    var toggle = document.querySelector(".reading-toc-toggle");
+    var panel = document.getElementById("reading-toc-panel");
+    if (!toggle || !panel) return;
+
+    var closeButton = panel.querySelector(".reading-toc-panel__close");
+    var inlineToc = document.querySelector(".post-toc");
+    var frame = null;
+
+    function setOpen(open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "목차 닫기" : "목차 열기");
+      toggle.classList.toggle("is-active", open);
+      panel.hidden = !open;
+      if (!open && restoreFocus) toggle.focus();
+    }
+
+    function updatePosition() {
+      frame = null;
+      var masthead = document.querySelector(".masthead");
+      // Keep the control below the masthead's reserved height even while the
+      // masthead animates off-screen. Moving a control during a tap can send
+      // the completed click to the navigation underneath it.
+      var top = Math.max(10, (masthead ? masthead.offsetHeight : 0) + 10);
+      top = Math.min(top, Math.max(10, window.innerHeight - 54));
+      var canShowToggle = !inlineToc || inlineToc.getBoundingClientRect().bottom <= top;
+      toggle.classList.toggle("is-visible", canShowToggle);
+      if (!canShowToggle && !panel.hidden) setOpen(false, false);
+      var panelTop = Math.min(top + 44, Math.max(10, window.innerHeight - 180));
+      toggle.style.top = top + "px";
+      panel.style.top = panelTop + "px";
+      panel.style.maxHeight = Math.max(160, window.innerHeight - panelTop - 12) + "px";
+    }
+
+    function schedulePosition() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(updatePosition);
+    }
+
+    toggle.addEventListener("pointerdown", function (event) {
+      // The masthead also listens for top-edge pointer input to reveal itself.
+      event.stopPropagation();
+    });
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true", false);
+    });
+    if (closeButton) {
+      closeButton.addEventListener("click", function () { setOpen(false, true); });
+    }
+    panel.addEventListener("click", function (event) {
+      if (event.target.closest("a[href^='#']")) setOpen(false, false);
+    });
+    document.addEventListener("pointerdown", function (event) {
+      if (panel.hidden || panel.contains(event.target) || toggle.contains(event.target)) return;
+      setOpen(false, false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) setOpen(false, true);
+    });
+    window.addEventListener("scroll", schedulePosition, { passive: true });
+    window.addEventListener("resize", schedulePosition, { passive: true });
+    updatePosition();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initReadingToc, { once: true });
+  } else {
+    initReadingToc();
+  }
+})();
+</script>
+
+  </body>
+</html>
