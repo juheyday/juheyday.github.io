@@ -1,0 +1,9 @@
+Nanum Myeongjo 400 and 700 Korean WOFF2 files
+
+Source package: @fontsource/nanum-myeongjo 5.2.11
+Package homepage: https://fontsource.org/fonts/nanum-myeongjo
+Package repository: https://github.com/fontsource/font-files
+License: SIL Open Font License 1.1 (see OFL.txt)
+
+Regular SHA-256: 561E9193A6E848B3F7CE9F8F5907310A13E175BC9D69E77DA2842A7517A97C16
+Bold SHA-256: F2C95C35D72782F71CB60E3CC537C461AE3F5EE7E7504DB9653BA7A7024DD548
